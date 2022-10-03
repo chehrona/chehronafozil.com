@@ -36,6 +36,7 @@ body {
     position: fixed;
     top: 20px;
     left: 20px;
+    cursor: pointer;
 }
 
 .logo--letter {
@@ -206,15 +207,15 @@ body {
     width: 45%;
     display: flex;
     position: relative;
-    overflow: hidden;
 }
 
-#node-image {
+.anim--image {
     position: absolute;
-    left: 2px;
-    top: 30px;
+    left: 0.5%;
+    top: 12.9%;
     z-index: 10;
-    width: 388px;
+    width: 99%;
+    height: 85.8%;
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -337,25 +338,21 @@ body {
     box-shadow: 0px 0px 10px black;
 }
 
-.education--wrapper-1 {
-    display: flex;
-    align-items: center;
+.cert-description {
+    margin-left: 42px;
 }
 
 .cert--name {
-    margin: 0px;
-    margin-right: 10px;
-    padding-inline-start: 17px !important;
-}
-
-.cert-description {
-    padding-inline-start: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
 }
 
 .certificate--icon:link,
 .certificate--icon:visited {
     color: rgb(255, 40, 66);
     text-decoration: none;
+    margin-left: 10px;
 }
 
 /* -------------------------------------------------- Work Experience --------------------------------------------------------- */
@@ -391,8 +388,8 @@ body {
 }
 
 .job--description {
+    margin-top: 15px;
     margin-left: 210px;
-    padding-inline-start: 17px !important;
 }
 /* ------------------------------------------------------------ Contacts Page --------------------------------------------------- */
 .contacts-container-1 {

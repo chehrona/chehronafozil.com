@@ -27,16 +27,21 @@ $(document).ready(function() {
             
         });
 
-        $("#node-image").mouseover(function(e) {
+        $(".anim--image").mouseover(function(e) {
             e.preventDefault();
             let animated = $(this).attr("data-anim");
             $(this).attr("src", animated);
         })
 
-        $("#node-image").mouseout(function(e) {
+        $(".anim--image").mouseout(function(e) {
             e.preventDefault();
             let still = $(this).attr("data-still");
             $(this).attr("src", still);
+        });
+
+        $(".logo-container").on("click", function() {
+            $(window).scrollTop(0);
+            location.reload();
         })
 
 
