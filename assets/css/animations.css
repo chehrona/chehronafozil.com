@@ -233,7 +233,7 @@
 .lang--wrapper.active .mask.full-18,
 .lang--wrapper.active .circle .fill-18 {
     animation: fill-18 ease-in-out 2s;
-    transform: rotate(250deg);
+    transform: rotate(120deg);
 }
 
 .mask .fill-19 {
@@ -244,7 +244,7 @@
 .lang--wrapper.active .mask.full-19,
 .lang--wrapper.active .circle .fill-19 {
     animation: fill-19 ease-in-out 2s;
-    transform: rotate(270deg);
+    transform: rotate(153deg);
 }
 
 .circle--wrap .inside--circle {
@@ -421,7 +421,7 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(250deg);
+        transform: rotate(120deg);
     }
 }
 
@@ -430,6 +430,6 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(270deg);
+        transform: rotate(153deg);
     }
 }
