@@ -25,7 +25,9 @@
 .circle--wrap .circle .fill-14,
 .circle--wrap .circle .fill-15,
 .circle--wrap .circle .fill-16,
-.circle--wrap .circle .fill-17 {
+.circle--wrap .circle .fill-17,
+.circle--wrap .circle .fill-18,
+.circle--wrap .circle .fill-19 {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -223,6 +225,18 @@
     transform: rotate(120deg);
 }
 
+.lang--wrapper.active .mask.full-18,
+.lang--wrapper.active .circle .fill-18 {
+    animation: fill-18 ease-in-out 2s;
+    transform: rotate(250deg);
+}
+
+.lang--wrapper.active .mask.full-19,
+.lang--wrapper.active .circle .fill-19 {
+    animation: fill-19 ease-in-out 2s;
+    transform: rotate(270deg);
+}
+
 .circle--wrap .inside--circle {
     width: 84px;
     height: 84px;
@@ -389,5 +403,23 @@
     }
     100% {
         transform: rotate(120deg);
+    }
+}
+
+@keyframes fill-18 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(250deg);
+    }
+}
+
+@keyframes fill-19 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(270deg);
     }
 }
