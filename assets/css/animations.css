@@ -225,10 +225,20 @@
     transform: rotate(120deg);
 }
 
+.mask .fill-18 {
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: rgb(118, 43, 255);
+}
+
 .lang--wrapper.active .mask.full-18,
 .lang--wrapper.active .circle .fill-18 {
     animation: fill-18 ease-in-out 2s;
     transform: rotate(250deg);
+}
+
+.mask .fill-19 {
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: rgb(118, 43, 255);
 }
 
 .lang--wrapper.active .mask.full-19,
