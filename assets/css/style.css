@@ -72,6 +72,11 @@ body {
     color: #cfcdcd;
 }
 
+.custom--icon {
+    filter:opacity(75%);
+    width: 22px;
+}
+
 .side--icon {
     filter: brightness(60%);
 }
