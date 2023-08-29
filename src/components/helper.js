@@ -1,6 +1,12 @@
 export const tech = [
     {
+        icon: "devicon-react-original", title: "React"
+    },
+    {
         icon: "devicon-javascript-plain", title: "JavaScript"
+    },
+    {
+        icon: "devicon-jquery-plain", title: "jQuery"
     },
     {
         icon: "devicon-html5-plain", title: "HTML5"
@@ -9,16 +15,7 @@ export const tech = [
         icon: "devicon-css3-plain", title: "CSS3"
     },
     {
-        icon: "devicon-jquery-plain", title: "jQuery"
-    },
-    {
-        icon: "devicon-react-original", title: "React"
-    },
-    {
         icon: "devicon-nodejs-plain", title: "Node.js"
-    },
-    {
-        icon: "devicon-mongodb-plain", title: "mongoDB"
     },
     {
         icon: "devicon-python-plain", title: "Python"
@@ -33,6 +30,9 @@ export const tech = [
         icon: "devicon-vim-plain", title: "Vim"
     },
     {
+        icon: "devicon-mongodb-plain", title: "mongoDB"
+    },
+    {
         icon: "devicon-firebase-plain", title: "Firebase"
     },
     {
@@ -45,12 +45,6 @@ export const tech = [
         icon: "devicon-jupyter-plain", title: "Jupyter"
     },
     {
-        icon: "devicon-numpy-original", title: "NumPy"
-    },
-    {
-        icon: "devicon-pandas-original", title: "Pandas"
-    },
-    {
         icon: "devicon-jira-plain", title: "Jira"
     },
     {
@@ -58,7 +52,13 @@ export const tech = [
     },
     {
         icon: "devicon-figma-plain", title: "Figma"
-    }
+    },
+    {
+        icon: "devicon-numpy-original", title: "NumPy"
+    },
+    {
+        icon: "devicon-pandas-original", title: "Pandas"
+    },
 ];
 
 export const projectList = [

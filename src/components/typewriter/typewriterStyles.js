@@ -16,7 +16,7 @@ export const LineOne = styled.div`
     font-weight: bold;
     display: flex;
     justify-content: start;
-    bottom: 21.5rem;
+    bottom: 21rem;
     left: -0.5rem;
     position: absolute;
 `;
@@ -30,7 +30,7 @@ export const LineTwo = styled.div`
     white-space: nowrap;
     display: flex;
     justify-content: start;
-    bottom: 15.7rem;
+    bottom: 15rem;
     left: -0.5rem;
     position: absolute;
 `;
@@ -42,7 +42,7 @@ export const DescLine = styled.div`
     white-space: nowrap;
     display: flex;
     justify-content: start;
-    bottom: 7.7rem;
+    bottom: 6rem;
     position: absolute;
 `;
 
