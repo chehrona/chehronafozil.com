@@ -66,6 +66,32 @@ export const projectList = [
         title: "Closet Organizer",
         desc: "I have nothing to wear! Everyone has thought it once (if not daily) despite having tons of clothes. The app is intended help you organize your closet, create looks, plan outfits ahead and even keep track of how many times an item has been worn.",
         tech: [
+            "devicon-react-original",
+            "devicon-css3-plain",
+            "fa-brands fa-google-drive",
+            "devicon-amazonwebservices-original",
+        ],
+        buttons: [
+            {
+                link: "https://www.thetajikheritage.com/",
+                icon: "fa-solid fa-play",
+                name: "Run"
+            },
+            {
+                link: "https://github.com/chehrona/thetajikheritage.com",
+                icon: "fa-brands fa-github",
+                name: "Source"
+            }
+        ],
+        image: {
+            side: true,
+            src: "/closet.png"
+        }
+    },
+    {
+        title: "Closet Organizer",
+        desc: "I have nothing to wear! Everyone has thought it once (if not daily) despite having tons of clothes. The app is intended help you organize your closet, create looks, plan outfits ahead and even keep track of how many times an item has been worn.",
+        tech: [
             "devicon-html5-plain",
             "devicon-css3-plain",
             "devicon-javascript-plain",
