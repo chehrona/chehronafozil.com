@@ -3,8 +3,8 @@
 body {
   background: #212020;
   font-family: 'Space Mono', monospace;
-  color: white;
+  color: #fbfbfb;
   box-sizing: border-box;
-  padding-left: 6.875rem;
-  padding-right: 3%;
+  padding-left: 7rem;
+  padding-right: 4.5rem;
 }

@@ -63,8 +63,8 @@ export const tech = [
 
 export const projectList = [
     {
-        title: "Closet Organizer",
-        desc: "I have nothing to wear! Everyone has thought it once (if not daily) despite having tons of clothes. The app is intended help you organize your closet, create looks, plan outfits ahead and even keep track of how many times an item has been worn.",
+        title: "thetajikheritage.com",
+        desc: "A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.",
         tech: [
             "devicon-react-original",
             "devicon-css3-plain",
@@ -110,7 +110,7 @@ export const projectList = [
             }
         ],
         image: {
-            side: true,
+            side: false,
             src: "/closet.png"
         }
     },
@@ -136,7 +136,7 @@ export const projectList = [
             }
         ],
         image: {
-            side: false,
+            side: true,
             src: "/closet.png"
         }
     },

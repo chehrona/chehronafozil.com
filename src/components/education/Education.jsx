@@ -1,31 +1,51 @@
 import React from "react";
 import { educationList } from "../helper";
 
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+
 import { 
+    EducationContainer,
     PageTitle,
-    ProjectBox,
-    ProjectDesc,
-    ProjectInfo,
-    ProjectName,
-    TechUsed,
-    StyledIcon,
     Link,
-    ButtonName,
     ButtonWrapper,
-    ButtonBox,
-    ImageWrapper,
-    ProjectImage,
+    School,
+    EducationBox,
+    DegreeWrapper,
+    DegreeSubtitle,
+    Cap,
 } from "./educationStyles";
 
 export default function Education() {
     return (
-        <div>
+        <EducationContainer>
             <PageTitle>Education</PageTitle>
-            {educationList.map((entry, i) => {
-                return (
-                    <div>Hello</div>
-                );
-            })}
-        </div>
+            <div>
+                {educationList.map((entry, i) => {
+                    return (
+                        <EducationBox>
+                            <DegreeWrapper>
+                                <Cap icon={faGraduationCap} />
+                                <div>
+                                    {entry?.title}
+                                    <DegreeSubtitle>
+                                        {entry?.subtitle}
+                                    </DegreeSubtitle>
+                                </div>
+                            </DegreeWrapper>
+                            <School>
+                                {entry?.uni}
+                            </School>
+                            {entry?.buttons &&
+                                 <Link target="_blank" href={entry?.buttons.link}>
+                                    <ButtonWrapper>
+                                        <div>{entry?.buttons.name}</div>
+                                    </ButtonWrapper>
+                                </Link>
+                            }
+                        </EducationBox>
+                    );
+                })}
+            </div>
+        </EducationContainer>
     )
 }

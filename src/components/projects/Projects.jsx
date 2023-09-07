@@ -2,6 +2,7 @@ import React from "react";
 import { projectList } from "../helper";
 
 import { 
+    ProjectContainer,
     PageTitle,
     ProjectBox,
     ProjectDesc,
@@ -19,7 +20,7 @@ import {
 
 export default function Projects() {
     return (
-        <div>
+        <ProjectContainer>
             <PageTitle>Things I've built</PageTitle>
             {projectList.map((entry, i) => {
                 return (
@@ -45,12 +46,12 @@ export default function Projects() {
                                 })}
                             </ButtonBox>
                         </ProjectInfo>
-                        <ImageWrapper right={entry.image.side}>
-                            <ProjectImage src={entry.image.src} />
+                        <ImageWrapper>
+                            <ProjectImage src={entry?.image.src} />
                         </ImageWrapper>
                     </ProjectBox>
                 );
             })}
-        </div>
+        </ProjectContainer>
     )
 }

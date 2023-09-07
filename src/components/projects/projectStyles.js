@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const ProjectContainer = styled.div`
+    margin-bottom: 1rem;
+`;
+
 export const PageTitle = styled.div`
     text-align: right;
     font-size: 2.75rem;
@@ -10,10 +14,10 @@ export const PageTitle = styled.div`
 export const ProjectBox = styled.div`
     display: flex;
     margin-top: 1.25rem;
-    padding: 1.875rem;
+    padding: 2rem;
     justify-content: space-between;
     align-items: flex-start;
-    flex-direction: ${({ right }) => !right && "row-reverse"}
+    flex-direction: ${({ right }) => !right && "row-reverse"};
 
     &:hover {
         box-shadow: 0rem 0rem 0.625rem black;
@@ -45,7 +49,7 @@ export const StyledIcon = styled.i`
     font-size: ${({ view }) => view ? "1.875rem" : "1.375rem"};
     color: ${({ view }) => view ? "#212020" : "#cfcdcd"};
     margin-bottom: ${({ view }) => view ? "0rem" : "1.25rem"};
-    margin-right: ${({ view }) => view ? "0rem" : "0.5rem"}
+    margin-right: ${({ view }) => view ? "0rem" : "0.5rem"};
 `;
 
 export const ButtonBox = styled.div`
@@ -82,13 +86,10 @@ export const ButtonWrapper = styled.div`
 export const ImageWrapper = styled.div`
     width: 45%;
     display: flex;
-    position: relative;
-    margin-right: ${({ right }) => right ? "0rem" : "3.125rem"};
-    margin-left: ${({ right }) => right ? "3.125rem" : "0rem"};
+    background: green;
 `;
 
 export const ProjectImage = styled.img`
     height: auto;
     width: 100%;
-    margin: 0rem;
 `;

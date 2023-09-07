@@ -4,13 +4,14 @@ export const MainContainer = styled.div`
     display: flex;
     align-items: flex-start;
     position: relative;
+    justify-content: space-between;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    gap: 5rem;
 `;
 
 export const TextBox = styled.div`
-    width: 38%;
-    margin-right: 5.625rem;
+    width: 45%;
     text-align: left;
 `;
 
@@ -61,7 +62,6 @@ export const Circle = styled.div`
     text-align: center;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
-    color: white;
     position: absolute;
     z-index: 100;
     font-weight: 700;
@@ -71,7 +71,7 @@ export const Circle = styled.div`
 export const StyledIcon = styled.i`
     font-size: 3.125rem;
     position: absolute;
-    color: #f3f3f3;
+    color: white;
     background-color: #212020;
     left: 50%;
     top: 50%;

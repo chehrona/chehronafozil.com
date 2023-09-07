@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import Education from './components/education/Education';
 import Footer from './components/footer/Footer.jsx';
 import Skills from './components/skills/Skills';
