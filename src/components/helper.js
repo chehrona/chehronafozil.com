@@ -173,3 +173,40 @@ export const certificateList = [
     }
 
 ];
+
+export const experienceList = [
+    {
+        dates: "2022 - Pres",
+        title: "Jr. Full Stack Developer",
+        place: "nference - Toronto, ON",
+        desc: [
+            "• Created onboarding tours by integrating interactive elements and multi-page capabilities by forking the Shepherd.js library",
+            "• Streamlined tour creation/modification with a user-friendly sidebar, reducing reliance on developers",
+            "• Automated slide renaming for QC by extracting vital data, such as case ID, from slide barcodes",
+            "• Developing scanner hardware error reporting for improved issue tracking, centralized knowledge base and operator information sharing between shifts",
+            "• Constructing a dynamic troubleshooting guide to decrease dependency to post on Slack channels and resolution teams"
+
+        ]
+    },
+    {
+        dates: "2020 - 2021",
+        title: "Research Technician I",
+        place: "University Health Network - Toronto, ON",
+        desc: [
+            "• Established new protocols for gene engineering and flow cytometry",
+            "• Managed the mice facility and systematized DNA screening procedures",
+            "• Co-authored two scientific papers"
+        ]
+    },
+    {
+        dates: "2018 - 2020",
+        title: "Teaching Assistant",
+        place: "McGill University - Montréal, QC",
+        desc: [
+            "• Provided review sessions (active learning approach)",
+            "• Led problem solving lectures and monitored student responses (~400 students)",
+            "• Graded exams and discussed marks during viewing sessions"
+        ]
+    },
+
+];

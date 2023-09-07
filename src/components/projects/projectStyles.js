@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 `;
 
 export const PageTitle = styled.div`
-    text-align: right;
+    text-align: left;
     font-size: 2.75rem;
     font-weight: bold;
-    background: red;
 `;
 
 export const ProjectBox = styled.div`

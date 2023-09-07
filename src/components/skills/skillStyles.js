@@ -5,9 +5,7 @@ export const MainContainer = styled.div`
     align-items: flex-start;
     position: relative;
     justify-content: space-between;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    gap: 5rem;
+    margin-bottom: 1rem;
 `;
 
 export const TextBox = styled.div`

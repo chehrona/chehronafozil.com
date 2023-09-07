@@ -19,33 +19,31 @@ export default function Education() {
     return (
         <EducationContainer>
             <PageTitle>Education</PageTitle>
-            <div>
-                {educationList.map((entry, i) => {
-                    return (
-                        <EducationBox>
-                            <DegreeWrapper>
-                                <Cap icon={faGraduationCap} />
-                                <div>
-                                    {entry?.title}
-                                    <DegreeSubtitle>
-                                        {entry?.subtitle}
-                                    </DegreeSubtitle>
-                                </div>
-                            </DegreeWrapper>
-                            <School>
-                                {entry?.uni}
-                            </School>
-                            {entry?.buttons &&
-                                 <Link target="_blank" href={entry?.buttons.link}>
-                                    <ButtonWrapper>
-                                        <div>{entry?.buttons.name}</div>
-                                    </ButtonWrapper>
-                                </Link>
-                            }
-                        </EducationBox>
-                    );
-                })}
-            </div>
+            {educationList.map((entry, i) => {
+                return (
+                    <EducationBox>
+                        <DegreeWrapper>
+                            <Cap icon={faGraduationCap} />
+                            <div>
+                                {entry?.title}
+                                <DegreeSubtitle>
+                                    {entry?.subtitle}
+                                </DegreeSubtitle>
+                            </div>
+                        </DegreeWrapper>
+                        <School>
+                            {entry?.uni}
+                        </School>
+                        {entry?.buttons &&
+                                <Link target="_blank" href={entry?.buttons.link}>
+                                <ButtonWrapper>
+                                    <div>{entry?.buttons.name}</div>
+                                </ButtonWrapper>
+                            </Link>
+                        }
+                    </EducationBox>
+                );
+            })}
         </EducationContainer>
     )
 }
