@@ -16,10 +16,7 @@ export const CertWrapper = styled.div`
     display: flex;
     align-items: center;
     padding-left: 2rem;
-`;
-
-export const CertName = styled.div`
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 `;
 
 export const Company = styled.span`
@@ -36,5 +33,4 @@ export const Link = styled.a`
 export const StyledIcon = styled(FontAwesomeIcon)`
     color: rgb(255, 40, 66);
     margin-left: 1rem;
-    font-size: 1.25rem;
 `;

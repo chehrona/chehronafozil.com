@@ -8,7 +8,6 @@ import {
     PageTitle,
     Link,
     CertWrapper,
-    CertName,
     Company,
     StyledIcon,
 } from "./certificateStyles";
@@ -20,10 +19,10 @@ export default function Certificates() {
             {certificateList.map((entry, i) => {
                 return (
                     <CertWrapper key={i}>
-                        <CertName>
+                        <div>
                             {entry?.name}
                             <Company>freeCodeCamp</Company>
-                        </CertName>
+                        </div>
                         <Link target={'_blank'} href={entry?.link}>
                             <StyledIcon icon={faUpRightFromSquare} />     
                         </Link>
