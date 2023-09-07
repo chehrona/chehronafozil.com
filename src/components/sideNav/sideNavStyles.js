@@ -17,10 +17,13 @@ export const SideLine = styled.div`
 `;
 
 export const StyledMail = styled(MailOutline)`
-    font-size: 1.375rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: #cfcdcd;
     filter: brightness(60%);
+
+    &.MuiSvgIcon-root {
+        font-size: 1.7rem;
+    }
 
     &:hover {
         filter: brightness(100%);  
@@ -28,10 +31,13 @@ export const StyledMail = styled(MailOutline)`
 `;
 
 export const StyledGitHub = styled(GitHub)`
-    font-size: 1.375rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: #cfcdcd;
     filter: brightness(60%);
+
+    &.MuiSvgIcon-root {
+        font-size: 1.7rem;
+    }
 
     &:hover {
         filter: brightness(100%);  
@@ -39,10 +45,13 @@ export const StyledGitHub = styled(GitHub)`
 `;
 
 export const StyledLinkedIn = styled(LinkedIn)`
-    font-size: 1.375rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: #cfcdcd;
     filter: brightness(60%);
+
+    &.MuiSvgIcon-root {
+        font-size: 1.7rem;
+    }
 
     &:hover {
         filter: brightness(100%);  
