@@ -17,6 +17,7 @@ export const CertWrapper = styled.div`
     align-items: center;
     padding-left: 2rem;
     font-size: 1.25rem;
+    margin-top: 0.5rem;
 `;
 
 export const Company = styled.span`
