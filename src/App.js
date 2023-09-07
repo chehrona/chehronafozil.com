@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Certificates from './components/certificates/Certificates';
 import Education from './components/education/Education';
 import Experience from './components/experience/Experience';
 import Footer from './components/footer/Footer.jsx';
@@ -15,6 +16,7 @@ function App() {
             <Projects />
             <Skills />
             <Education />
+            <Certificates />
             <Footer />
         </div>
     );

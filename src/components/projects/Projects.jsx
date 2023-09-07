@@ -36,7 +36,7 @@ export default function Projects() {
                             <ButtonBox>
                                 {entry.buttons.map((button, k) => {
                                     return (
-                                        <Link key={k} target="_blank" href={button.link}>
+                                        <Link key={k} target={"_blank"} href={button.link}>
                                             <ButtonWrapper>
                                                 <StyledIcon view={true} className={button.icon}></StyledIcon>
                                                 <ButtonName>{button.name}</ButtonName>

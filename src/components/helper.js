@@ -163,13 +163,20 @@ export const educationList = [
 
 export const certificateList = [
     {
-        name: "Scientific Computing with Python - freeCodeCamp",
+        name: "• Scientific Computing with Python - ",
         link: "https://www.freecodecamp.org/certification/chehrona/scientific-computing-with-python-v7",
     },
     {
-        title: "Bachelor of Science, Biochemistry",
-        subtitle: "Minor: Business Administration",
-        uni: "Maryville College - Maryville, TN",   
+        name: "• Data Analysis with Python - ",
+        link: "https://www.freecodecamp.org/certification/chehrona/data-analysis-with-python-v7",
+    },
+    {
+        name: "• JavaScript Algorithms & Data Structures - ",
+        link: "https://www.freecodecamp.org/certification/chehrona/javascript-algorithms-and-data-structures"
+    },
+    {
+        name: "• Responsive Web Design - ",
+        link: "https://www.freecodecamp.org/certification/chehrona/responsive-web-design"
     }
 
 ];

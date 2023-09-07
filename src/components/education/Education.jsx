@@ -21,7 +21,7 @@ export default function Education() {
             <PageTitle>Education</PageTitle>
             {educationList.map((entry, i) => {
                 return (
-                    <EducationBox>
+                    <EducationBox key={i + 1}>
                         <DegreeWrapper>
                             <Cap icon={faGraduationCap} />
                             <div>

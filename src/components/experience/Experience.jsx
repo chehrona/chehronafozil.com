@@ -18,14 +18,14 @@ export default function Experience() {
             <PageTitle>Professional background</PageTitle>
             {experienceList.map((entry, i) => {
                 return (
-                    <WorkBox>
+                    <WorkBox key={i + 2}>
                         <Date>{entry?.dates}</Date>
                         <WorkWrapper>
                             <WorkTitle>{entry?.title}</WorkTitle>
                             <Location>{entry?.place}</Location>
                             <WorkDesc>
                                 {entry?.desc.map((exp, i) => {
-                                    return <div>{exp}</div>
+                                    return <div key={i + 3}>{exp}</div>
                                 })}
                             </WorkDesc>
                         </WorkWrapper>

@@ -44,24 +44,3 @@ export const Location = styled.div`
     font-size: 1.25rem;
     font-weight: normal;
 `;
-
-export const Link = styled.a`
-    &:link, &:visited {
-        color: #212020;
-        text-decoration: none;
-    }
-`;
-
-export const ButtonWrapper = styled.div`
-    background-color: white;
-    padding: 0.3125rem;
-    width: fit-content;
-    height: 1.875rem;
-    border-radius: 0.5rem;
-    display: flex;
-    color: #212020;
-    margin-left: 2.9rem;
-    margin-top: 0.5rem;
-    align-items: center;
-    box-shadow: 0rem 0rem 0.625rem black;
-`;
