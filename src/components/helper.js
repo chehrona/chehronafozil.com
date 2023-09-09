@@ -191,7 +191,6 @@ export const experienceList = [
             "• Streamlined tour creation/modification with a user-friendly sidebar, reducing reliance on developers",
             "• Automated slide renaming for QC by extracting vital data, such as case ID, from slide barcodes",
             "• Developing scanner hardware error reporting for improved issue tracking, centralized knowledge base and operator information sharing between shifts",
-            "• Constructing a dynamic troubleshooting guide to decrease dependency to post on Slack channels and resolution teams"
 
         ]
     },
