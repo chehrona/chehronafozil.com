@@ -85,10 +85,10 @@ export const ButtonWrapper = styled.div`
 export const ImageWrapper = styled.div`
     width: 45%;
     display: flex;
-    background: green;
 `;
 
 export const ProjectImage = styled.img`
     height: auto;
     width: 100%;
+    filter: drop-shadow(0rem 0rem 0.13rem #8b8c8f);
 `;

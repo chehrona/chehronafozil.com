@@ -85,7 +85,7 @@ export const projectList = [
         ],
         image: {
             side: true,
-            src: "/closet.png"
+            src: "/tajik.png"
         }
     },
     {
@@ -137,7 +137,7 @@ export const projectList = [
         ],
         image: {
             side: true,
-            src: "/closet.png"
+            src: "/rps.png"
         }
     },
 ];

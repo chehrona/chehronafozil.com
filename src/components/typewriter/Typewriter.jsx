@@ -11,7 +11,7 @@ export default function Typewriter() {
             <LineOne>
                 <ReactTyped
                     strings={["Hi!"]}
-                    typeSpeed={100}
+                    typeSpeed={70}
                     cursorChar="|"
                     showCursor={true}
                     onComplete={(instance) => {
@@ -22,8 +22,8 @@ export default function Typewriter() {
             <LineTwo>
                 <ReactTyped
                     strings={["I am Chehrona"]}
-                    typeSpeed={80}
-                    startDelay={420}
+                    typeSpeed={60}
+                    startDelay={300}
                     cursorChar="|"
                     showCursor={true}
                     onComplete={(instance) => {
@@ -37,7 +37,7 @@ export default function Typewriter() {
                 <ReactTyped
                     strings={["A molecular biologist turned software engineer."]}
                     typeSpeed={25}
-                    startDelay={2000}
+                    startDelay={1800}
                     cursorChar="|"
                     showCursor={true}
                     onComplete={(instance) => {
