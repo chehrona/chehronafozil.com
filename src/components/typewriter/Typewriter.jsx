@@ -35,7 +35,7 @@ export default function Typewriter() {
             {showOverlay && <CursorOverlay />}
             <DescLine>
                 <ReactTyped
-                    strings={["A molecular biologist turned software engineer."]}
+                    strings={["A molecular biologist turned software engineer"]}
                     typeSpeed={25}
                     startDelay={1800}
                     cursorChar="|"
