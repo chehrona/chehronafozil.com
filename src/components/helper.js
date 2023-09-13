@@ -187,7 +187,7 @@ export const experienceList = [
         title: "Jr. Full Stack Developer",
         place: "nference - Toronto, ON",
         desc: [
-            "• Created onboarding tours by integrating interactive elements and multi-page capabilities by forking the Shepherd.js library",
+            "• Built a feature for onboarding tours by integrating interactive elements and multi-page capabilities by forking the Shepherd.js library",
             "• Streamlined tour creation/modification with a user-friendly sidebar, reducing reliance on developers",
             "• Automated slide renaming for QC by extracting vital data, such as case ID, from slide barcodes",
             "• Developing scanner hardware error reporting for improved issue tracking, centralized knowledge base and operator information sharing between shifts",
