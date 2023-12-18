@@ -51,6 +51,10 @@ export const StyledIcon = styled.i`
     margin-right: ${({ view }) => view ? "0rem" : "0.5rem"};
 `;
 
+export const StyledSvg = styled.svg`
+    fill: #cfcdcd;
+`;
+
 export const ButtonBox = styled.div`
     display: flex;
     width: 12.5rem;

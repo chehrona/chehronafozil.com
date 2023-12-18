@@ -18,7 +18,7 @@ export const tech = [
         icon: "devicon-nodejs-plain", title: "Node.js"
     },
     {
-        icon: "devicon-python-plain", title: "Python"
+        icon: "devicon-docker-plain", title: "Docker"
     },
     {
         icon: "devicon-git-plain", title: "Git"
@@ -42,9 +42,6 @@ export const tech = [
         icon: "devicon-mysql-plain", title: "MySQL"
     },
     {
-        icon: "devicon-jupyter-plain", title: "Jupyter"
-    },
-    {
         icon: "devicon-jira-plain", title: "Jira"
     },
     {
@@ -52,12 +49,6 @@ export const tech = [
     },
     {
         icon: "devicon-figma-plain", title: "Figma"
-    },
-    {
-        icon: "devicon-numpy-original", title: "NumPy"
-    },
-    {
-        icon: "devicon-pandas-original", title: "Pandas"
     },
 ];
 
@@ -67,7 +58,11 @@ export const projectList = [
         desc: "A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.",
         tech: [
             "devicon-react-original",
-            "devicon-docker-plain"
+            "devicon-nodejs-plain",
+            "devicon-express-original",
+            "devicon-mongodb-plain",
+            "devicon-docker-plain",
+            "/caddy.svg"
         ],
         buttons: [
             {

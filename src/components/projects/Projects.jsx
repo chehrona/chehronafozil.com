@@ -16,6 +16,7 @@ import {
     ButtonBox,
     ImageWrapper,
     ProjectImage,
+    StyledSvg
 } from "./projectStyles";
 
 export default function Projects() {
@@ -30,7 +31,11 @@ export default function Projects() {
                             <ProjectDesc>{entry.desc}</ProjectDesc>
                             <TechUsed>
                                 {entry.tech.map((item, j) => {
-                                    return <StyledIcon key={j} className={item}></StyledIcon>
+                                    if (item.startsWith("/")) {
+                                        return <StyledSvg key={j} src={item}></StyledSvg>
+                                    } else {
+                                        return <StyledIcon key={j} className={item}></StyledIcon>
+                                    }
                                 })}
                             </TechUsed>
                             <ButtonBox>
