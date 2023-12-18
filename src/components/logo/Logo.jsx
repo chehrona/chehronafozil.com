@@ -67,9 +67,9 @@ export default function Logo() {
   
     return (
         <MainContainer>
-            <Letter src="letterC.svg" />
-            <Dot src="dot.svg" style={customStyle?.dot} />
-            <Letter src="letterF.svg" top={"0.0125rem"} left={"0.1875rem"} style={customStyle?.two} />
+            <Letter src={process.env.PUBLIC_URL + '/letterC.svg'} />
+            <Dot src={process.env.PUBLIC_URL + '/dot.svg'} style={customStyle?.dot} />
+            <Letter src={process.env.PUBLIC_URL + '/letterF.svg'} top={"0.0125rem"} left={"0.1875rem"} style={customStyle?.two} />
         </MainContainer>
     );
   }
