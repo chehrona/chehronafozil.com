@@ -67,9 +67,7 @@ export const projectList = [
         desc: "A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.",
         tech: [
             "devicon-react-original",
-            "devicon-css3-plain",
-            "fa-brands fa-google-drive",
-            "devicon-amazonwebservices-original",
+            "devicon-docker-plain"
         ],
         buttons: [
             {
