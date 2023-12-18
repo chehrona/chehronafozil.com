@@ -32,7 +32,7 @@ export default function Projects() {
                             <TechUsed>
                                 {entry.tech.map((item, j) => {
                                     if (item.startsWith("/")) {
-                                        return <StyledSvg key={j} src={item}></StyledSvg>
+                                        return <StyledSvg key={j} src={process.env.PUBLIC_URL + item}></StyledSvg>
                                     } else {
                                         return <StyledIcon key={j} className={item}></StyledIcon>
                                     }
@@ -52,7 +52,7 @@ export default function Projects() {
                             </ButtonBox>
                         </ProjectInfo>
                         <ImageWrapper>
-                            <ProjectImage src={entry?.image.src} />
+                            <ProjectImage src={process.env.PUBLIC_URL + entry?.image.src} />
                         </ImageWrapper>
                     </ProjectBox>
                 );
