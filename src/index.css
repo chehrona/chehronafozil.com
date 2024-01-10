@@ -1,10 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
+html {
+    padding: 0rem;
+}
+
 body {
-  background: #212020;
-  font-family: 'Space Mono', monospace;
-  color: #fbfbfb;
-  box-sizing: border-box;
-  padding-left: 7rem;
-  padding-right: 4.5rem;
+    background: #212020;
+    font-family: 'Space Mono', monospace;
+    color: #fbfbfb;
+    padding: 0rem 4.5rem 0rem 7rem;
+    font-size: 1.125rem;
+    margin: 0rem;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin: 0rem;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+      font-size: 1.45rem;
+      padding: 0rem;
+  }
+
+  h1 {
+      font-size: 2rem;
+      line-height: 2.3rem;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 960px) {
+    body {
+        background-color: green;
+    }
 }

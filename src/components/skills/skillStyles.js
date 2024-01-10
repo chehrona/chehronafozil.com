@@ -6,29 +6,44 @@ export const MainContainer = styled.div`
     position: relative;
     justify-content: space-between;
     margin-bottom: 1rem;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
 `;
 
 export const TextBox = styled.div`
     width: 45%;
     text-align: left;
+
+    @media (max-width: 480px) {
+        margin-top: -1.75rem;
+        width: 100%;
+        padding: 0rem 1rem 1rem 1rem;
+    }
 `;
 
 export const ToolBox = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    justify-content: space-between; 
-`;
+    justify-content: start;
 
-export const Title = styled.div`
-    font-size: 2.75rem;
-    font-weight: bold;
+    @media (max-width: 480px) {
+        width: 100%;
+        padding: 0.5rem;
+        justify-content: center;
+    }
 `;
 
 export const TextBody = styled.div`
     margin-top: 2.5rem;
-    font-size: 1.125rem;
     color: #cfcdcd;
+
+    @media (max-width: 480px) {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+    }
 `;
 
 export const LangWrapper = styled.div`
@@ -39,6 +54,10 @@ export const LangWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1.875rem;
+
+    @media (max-width: 480px) {
+        font-size: 1.25rem;
+    }
 `;
 
 export const CircleWrap = styled.div`
@@ -49,6 +68,11 @@ export const CircleWrap = styled.div`
     height: 6.25rem;
     background: #cfcdcd;
     border-radius: 50%;
+
+    @media (max-width: 480px) {
+        width: 6rem;
+        height: 6rem;
+    }
 `;
 
 export const Circle = styled.div`
@@ -64,6 +88,11 @@ export const Circle = styled.div`
     z-index: 100;
     font-weight: 700;
     font-size: 2em;
+
+    @media (max-width: 480px) {
+        width: 5rem;
+        height: 5rem;
+    }
 `;
 
 export const StyledIcon = styled.i`

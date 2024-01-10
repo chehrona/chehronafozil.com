@@ -1,56 +1,48 @@
 import styled from "styled-components";
 
-export const Typewriter = styled.div`
-    position: absolute;
-    height: 40vh;
-    text-align: left;
-    bottom: 4.05rem;
-    left: -0.5rem;
-`;
-
 export const LineOne = styled.div`
     overflow: hidden;
-    line-height: 6rem;
     margin: 0 auto;
     font-size: 5.875rem;
     font-weight: bold;
-    display: flex;
-    justify-content: start;
-    bottom: 21rem;
-    left: -0.5rem;
+    left: 0.35rem;
     position: absolute;
-`;
+    max-height: 7.2rem;
+    bottom: ${({ bottom }) => bottom && `${bottom}rem`};
 
-export const LineTwo = styled.div`
-    overflow: hidden;
-    line-height: 6rem;
-    margin: 0 auto;
-    font-size: 5.875rem;
-    font-weight: bold;
-    white-space: nowrap;
-    display: flex;
-    justify-content: start;
-    bottom: 15rem;
-    left: -0.5rem;
-    position: absolute;
+    @media (max-width: 480px) {
+        font-size: 2.8rem;
+        left: 1rem;
+        max-height: 3.3rem;
+    }
 `;
 
 export const DescLine = styled.div`
     font-size: 1.5rem;
-    margin-top: 7rem;
-    margin-left: 0.35rem;
-    white-space: nowrap;
+    left: 0.35rem;
+    white-space: pre-wrap;
     display: flex;
     justify-content: start;
-    bottom: 6rem;
     position: absolute;
+    bottom: ${({ bottom }) => bottom && `${bottom}rem`};
+
+    @media (max-width: 480px) {
+        font-size: 1.45rem;
+        white-space: pre-wrap;
+        left: 1rem;
+    }
 `;
 
 export const CursorOverlay = styled.div`
     width: 2rem;
     height: 3rem;
     position: absolute;
-    bottom: 7.7rem;
+    bottom: 0rem;
     background-color: #212020;
-    z-index: 10;
+    z-index: 10;    
+
+    @media (max-width: 480px) {
+        height: 1.5rem;
+        width: 1rem;
+    }
 `;

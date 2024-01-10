@@ -1,52 +1,55 @@
 import React, { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 
 // Styled components
 import { Dot, Letter, MainContainer } from "./logoStyles";
 
 export default function Logo() {
-    const [moveRatio, setMoveRatio] = useState(0);
     const [portViewHeight, setPortViewHeight] = useState(window.innerHeight);
+    const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
     const [customStyle, setCustomStyle] = useState({
         two: {},
         dot: {}
     });
   
+    let moveRatio = 0;
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
     
             if (scrollPosition <= portViewHeight) {
-                setMoveRatio(28 / portViewHeight);
+                moveRatio = 28 / portViewHeight;
                 setCustomStyle(prevState => ({
                         ...prevState,
                         two: {
-                        transform: `translateX(${scrollPosition * moveRatio}px)`
+                        transform: isMobile ? 'none' : `translateX(${scrollPosition * moveRatio}px)`
                     }
                 }));
             } else if (scrollPosition <= 2 * portViewHeight) {
                 if (scrollPosition <= 1.5 * portViewHeight) {
-                    setMoveRatio(14 / (portViewHeight / 2));
+                    moveRatio = 14 / (portViewHeight / 2);
                     setCustomStyle(prevState => ({
                     ...prevState,
                     dot: {
-                        transform: `translateX(${(scrollPosition - portViewHeight) * moveRatio}px)`
+                        transform: isMobile ? 'none' : `translateX(${(scrollPosition - portViewHeight) * moveRatio}px)`
                     }
                 }));
             } else if (scrollPosition <= 2 * portViewHeight) {
-                setMoveRatio(24.8 / (portViewHeight / 2));
+                moveRatio = 24.8 / (portViewHeight / 2);
                 setCustomStyle(prevState => ({
                 ...prevState,
                 dot: {
-                    transform: `translate(14px, ${(scrollPosition - (1.5 * portViewHeight)) * moveRatio}px)`
+                    transform: isMobile ? 'none' : `translate(14px, ${(scrollPosition - (1.5 * portViewHeight)) * moveRatio}px)`
                 }
                 }));
             }
             } else if (scrollPosition <= 3 * portViewHeight) {
-            setMoveRatio(180 / portViewHeight);
+            moveRatio = 180 / portViewHeight;
             setCustomStyle(prevState => ({
-                ...prevState,
-                two: {
-                transform: `translateX(28px) rotateY(${(scrollPosition - 2 * portViewHeight) * moveRatio}deg)`
+                    ...prevState,
+                    two: {
+                    transform: isMobile ? 'none' : `translateX(28px) rotateY(${(scrollPosition - 2 * portViewHeight) * moveRatio}deg)`
                 }
             }));
             }

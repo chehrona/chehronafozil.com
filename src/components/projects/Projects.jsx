@@ -1,6 +1,8 @@
 import React from "react";
 import { projectList } from "../helper";
 
+import { useMediaQuery } from "react-responsive";
+
 import { 
     ProjectContainer,
     PageTitle,
@@ -16,10 +18,12 @@ import {
     ButtonBox,
     ImageWrapper,
     ProjectImage,
-    StyledSvg
+    StyledImg
 } from "./projectStyles";
 
 export default function Projects() {
+    const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
+
     return (
         <ProjectContainer>
             <PageTitle>Things I've built</PageTitle>
@@ -27,12 +31,12 @@ export default function Projects() {
                 return (
                     <ProjectBox right={entry.image.side}>
                         <ProjectInfo key={i}>
-                            <ProjectName>{entry.title}</ProjectName>
-                            <ProjectDesc>{entry.desc}</ProjectDesc>
+                            {!isMobile ? <ProjectName>{entry.title}</ProjectName> : null}
+                            <ProjectDesc dangerouslySetInnerHTML={{__html: entry.desc}}></ProjectDesc>
                             <TechUsed>
                                 {entry.tech.map((item, j) => {
                                     if (item.startsWith("/")) {
-                                        return <StyledSvg key={j} src={process.env.PUBLIC_URL + item}></StyledSvg>
+                                        return <StyledImg key={j} src={process.env.PUBLIC_URL + item}></StyledImg>
                                     } else {
                                         return <StyledIcon key={j} className={item}></StyledIcon>
                                     }
@@ -52,6 +56,7 @@ export default function Projects() {
                             </ButtonBox>
                         </ProjectInfo>
                         <ImageWrapper>
+                            {isMobile ? <ProjectName>{entry.title}</ProjectName> : null}
                             <ProjectImage src={process.env.PUBLIC_URL + entry?.image.src} />
                         </ImageWrapper>
                     </ProjectBox>

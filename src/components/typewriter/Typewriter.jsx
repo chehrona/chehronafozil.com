@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import ReactTyped from "react-typed";
+import { useMediaQuery } from "react-responsive";
 
-import { CursorOverlay, DescLine, LineOne, LineTwo } from "./typewriterStyles";
+import { CursorOverlay, DescLine, LineOne } from "./typewriterStyles";
 
 export default function Typewriter() {
     const [showOverlay, setShowOverlay] = useState(true);
+    const [mobileOverlay, setMobileOverlay] = useState(true);
+    const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
 
     return (
         <div>
-            <LineOne>
+            <LineOne bottom={isMobile ? 15 : 21}>
                 <ReactTyped
                     strings={["Hi!"]}
                     typeSpeed={70}
@@ -19,7 +22,7 @@ export default function Typewriter() {
                     }}
                 />
             </LineOne>
-            <LineTwo>
+            <LineOne bottom={isMobile ? 12 : 15}>
                 <ReactTyped
                     strings={["I am Chehrona"]}
                     typeSpeed={60}
@@ -31,20 +34,36 @@ export default function Typewriter() {
                         instance.cursor.remove();
                     }}
                 />
-            </LineTwo>
-            {showOverlay && <CursorOverlay />}
-            <DescLine>
+            </LineOne>
+            <DescLine bottom={6}>
+                {showOverlay && <CursorOverlay />}
                 <ReactTyped
-                    strings={["A molecular biologist turned software engineer"]}
+                    strings={[isMobile ? "A molecular biologist" : "A molecular biologist turned software engineer"]}
                     typeSpeed={25}
                     startDelay={1800}
                     cursorChar="|"
                     showCursor={true}
                     onComplete={(instance) => {
+                        isMobile && setMobileOverlay(false);
                         instance.cursor.remove();
                     }}
                 />
             </DescLine>
+            {isMobile && (
+                <DescLine bottom={4}>
+                    {mobileOverlay && <CursorOverlay />}
+                    <ReactTyped
+                        strings={["turned software engineer"]}
+                        typeSpeed={25}
+                        startDelay={2550}
+                        cursorChar="|"
+                        showCursor={true}
+                        onComplete={(instance) => {
+                            instance.cursor.remove();
+                        }}
+                    />
+                </DescLine>
+            )}
         </div>
     )
 }

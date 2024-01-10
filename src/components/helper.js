@@ -6,6 +6,18 @@ export const tech = [
         icon: "devicon-javascript-plain", title: "JavaScript"
     },
     {
+        icon: "devicon-docker-plain", title: "Docker"
+    },
+    {
+        icon: "devicon-mongodb-plain", title: "mongoDB"
+    },
+    {
+        icon: "devicon-nodejs-plain", title: "Node.js"
+    },
+    {
+        icon: "devicon-express-original", title: "Express.js"
+    },
+    {
         icon: "devicon-jquery-plain", title: "jQuery"
     },
     {
@@ -15,12 +27,6 @@ export const tech = [
         icon: "devicon-css3-plain", title: "CSS3"
     },
     {
-        icon: "devicon-nodejs-plain", title: "Node.js"
-    },
-    {
-        icon: "devicon-docker-plain", title: "Docker"
-    },
-    {
         icon: "devicon-git-plain", title: "Git"
     },
     {
@@ -28,9 +34,6 @@ export const tech = [
     },
     {
         icon: "devicon-vim-plain", title: "Vim"
-    },
-    {
-        icon: "devicon-mongodb-plain", title: "mongoDB"
     },
     {
         icon: "devicon-firebase-plain", title: "Firebase"
@@ -55,14 +58,14 @@ export const tech = [
 export const projectList = [
     {
         title: "thetajikheritage.com",
-        desc: "A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.",
+        desc: "A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.<br><br>* Self-hosted in a personal server.",
         tech: [
             "devicon-react-original",
             "devicon-nodejs-plain",
             "devicon-express-original",
             "devicon-mongodb-plain",
             "devicon-docker-plain",
-            "/caddy.svg"
+            "/caddy.png"
         ],
         buttons: [
             {
@@ -78,7 +81,7 @@ export const projectList = [
         ],
         image: {
             side: true,
-            src: "/tajik.png"
+            src: "/project_1.png"
         }
     },
     {
@@ -178,19 +181,21 @@ export const experienceList = [
     {
         dates: "2022 - Pres",
         title: "Jr. Full Stack Developer",
-        place: "nference - Toronto, ON",
+        place: "nference",
+        city: "Toronto, ON",
         desc: [
-            "• Built a feature for onboarding tours by integrating interactive elements and multi-page capabilities by forking the Shepherd.js library",
-            "• Streamlined tour creation/modification with a user-friendly sidebar, reducing reliance on developers",
-            "• Automated slide renaming for QC by extracting vital data, such as case ID, from slide barcodes",
-            "• Developing scanner hardware error reporting for improved issue tracking, centralized knowledge base and operator information sharing between shifts",
+            "• Built a fea&shyture for on&shyboard&shying tours by in&shyteg&shyrat&shying in&shyte&shyract&shyive ele&shyments and mul&shyti-page ca&shypa&shybi&shyli&shyties by fork&shying the Shepherd.js lib&shyra&shyry",
+            "• Stream&shylined tour crea&shytion/ mo&shydi&shyfi&shyca&shytion with a user-friend&shyly side&shybar, re&shyduc&shying reliance on developers",
+            "• Au&shyto&shymated slide re&shynam&shying for QC by ex&shytract&shying vi&shytal da&shyta, such as case ID, from slide barcodes",
+            "• De&shyve&shylop&shying scan&shyner hard&shyware error re&shyport&shying for im&shyproved issue track&shying, centralized knowledge base and operator in&shyfor&shyma&shytion shar&shying be&shytween shifts",
 
         ]
     },
     {
         dates: "2020 - 2021",
         title: "Research Technician I",
-        place: "University Health Network - Toronto, ON",
+        place: "University Health Network",
+        city: "Toronto, ON",
         desc: [
             "• Established new protocols for gene engineering and flow cytometry",
             "• Managed the mice facility and systematized DNA screening procedures",
@@ -200,7 +205,8 @@ export const experienceList = [
     {
         dates: "2018 - 2020",
         title: "Teaching Assistant",
-        place: "McGill University - Montréal, QC",
+        place: "McGill University",
+        city: "Montréal, QC",
         desc: [
             "• Provided review sessions (active learning approach)",
             "• Led problem solving lectures and monitored student responses (~400 students)",

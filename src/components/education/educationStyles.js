@@ -5,10 +5,8 @@ export const EducationContainer = styled.div`
     margin-bottom: 3rem;
 `;
 
-export const PageTitle = styled.div`
+export const PageTitle = styled.h1`
     text-align: left;
-    font-size: 2.75rem;
-    font-weight: bold;
     margin-bottom: 1.25rem;
 `;
 
@@ -29,7 +27,6 @@ export const Cap = styled(FontAwesomeIcon)`
 `;
 
 export const DegreeSubtitle = styled.div`
-    font-size: 1.125rem;
     color: #cfcdcd;
     font-weight: normal;
 `;
