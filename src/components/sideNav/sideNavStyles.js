@@ -9,7 +9,13 @@ export const MainContainer = styled.div`
     text-align: center;
 
     @media (max-width: 480px) {
-        display: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        left: 0rem;
+        padding: 0rem 0.75rem 0.5rem 0rem;
     }
 `;
 
@@ -18,6 +24,10 @@ export const SideLine = styled.div`
     height: 3.625rem;
     background-color: white;
     margin: 0 auto;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
 `;
 
 export const StyledMail = styled(MailOutline)`
@@ -31,6 +41,10 @@ export const StyledMail = styled(MailOutline)`
 
     &:hover {
         filter: brightness(100%);  
+    }
+
+    @media (max-width: 480px) {
+        margin-left: 1rem;;
     }
 `;
 
@@ -59,5 +73,9 @@ export const StyledLinkedIn = styled(LinkedIn)`
 
     &:hover {
         filter: brightness(100%);  
+    }
+
+    @media (max-width: 480px) {
+        margin-left: 1rem;;
     }
 `;

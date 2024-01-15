@@ -1,14 +1,18 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useMediaQuery } from "react-responsive";
+
 import Logo from "../components/logo/Logo";
 import SideNav from "../components/sideNav/SideNav";
-
-import { PageContainer } from "./pageStyles";
 import Typewriter from "../components/typewriter/Typewriter";
 
+import { PageContainer } from "./pageStyles";
+
 export default function FirstPage() {
+    const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
+
     return (
         <PageContainer id="firstPage">
-            <SideNav />
+            {!isMobile ? <SideNav /> : null}
             <a href={"#firstPage"}>
                 <Logo />
             </a>

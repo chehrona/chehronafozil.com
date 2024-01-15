@@ -1,17 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
-    margin-bottom: 5rem;
-    margin-top: -2rem;
-`;
-
-export const PageTitle = styled.h1`
-    text-align: left;
-
-    @media (max-width: 480px) {
-        margin-left: 1rem;
-        max-width: fit-content;
-    }
+    margin: 1rem 0rem 5rem 0rem;
 `;
 
 export const ProjectBox = styled.div`
@@ -27,8 +17,8 @@ export const ProjectBox = styled.div`
     }
 
     @media (max-width: 480px) {
-        margin-top: 0rem;
-        padding: 1rem;
+        margin: 0rem;
+        padding: 0rem 0.75rem 2rem 0.75rem;
         flex-direction: column-reverse;
 
         &:hover {
@@ -111,7 +101,7 @@ export const ButtonWrapper = styled.div`
     background-color: white;
     padding: 0.3125rem;
     width: fit-content;
-    height: 1.875rem;
+    height: 2.75rem;
     border-radius: 0.5rem;
     display: flex;
     color: #212020;
@@ -138,4 +128,8 @@ export const ProjectImage = styled.img`
     height: auto;
     width: 100%;
     filter: drop-shadow(0rem 0rem 0.13rem #8b8c8f);
+
+    @media (max-width: 480px) {
+        margin-top: 1.25rem;
+    }
 `;

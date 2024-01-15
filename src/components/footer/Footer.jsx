@@ -1,9 +1,17 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
+
+import SideNav from "../sideNav/SideNav";
 
 import { StyledFooter } from "./footerStyles";
 
 export default function Footer() {
+    const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
+
     return (
-        <StyledFooter>Designed & Built by Chehronai Fozil</StyledFooter>
+        <StyledFooter>
+            {isMobile ? <SideNav /> : null}
+            <div>Designed & Built by Chehronai Fozil</div>
+        </StyledFooter>
     )
 }

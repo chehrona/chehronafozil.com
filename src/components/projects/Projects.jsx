@@ -1,15 +1,15 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
+
 import { projectList } from "../helper";
 
-import { useMediaQuery } from "react-responsive";
+import { PageTitle, SecondaryTitle } from "../commonStyles";
 
 import { 
     ProjectContainer,
-    PageTitle,
     ProjectBox,
     ProjectDesc,
     ProjectInfo,
-    ProjectName,
     TechUsed,
     StyledIcon,
     Link,
@@ -26,12 +26,12 @@ export default function Projects() {
 
     return (
         <ProjectContainer>
-            <PageTitle>Things I've built</PageTitle>
+            <PageTitle align={"right"}>Things I've built</PageTitle>
             {projectList.map((entry, i) => {
                 return (
                     <ProjectBox right={entry.image.side}>
                         <ProjectInfo key={i}>
-                            {!isMobile ? <ProjectName>{entry.title}</ProjectName> : null}
+                            {!isMobile ? <SecondaryTitle>{entry.title}</SecondaryTitle> : null}
                             <ProjectDesc dangerouslySetInnerHTML={{__html: entry.desc}}></ProjectDesc>
                             <TechUsed>
                                 {entry.tech.map((item, j) => {
@@ -56,7 +56,7 @@ export default function Projects() {
                             </ButtonBox>
                         </ProjectInfo>
                         <ImageWrapper>
-                            {isMobile ? <ProjectName>{entry.title}</ProjectName> : null}
+                            {isMobile ? <SecondaryTitle>{entry.title}</SecondaryTitle> : null}
                             <ProjectImage src={process.env.PUBLIC_URL + entry?.image.src} />
                         </ImageWrapper>
                     </ProjectBox>

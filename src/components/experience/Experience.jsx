@@ -3,16 +3,14 @@ import { experienceList } from "../helper";
 
 import { useMediaQuery } from "react-responsive";
 
+import { BodyText, PageTitle, SecondaryTitle } from "../commonStyles";
+
 import { 
-    ExperienceContainer,
-    PageTitle,
-    Date,
     WorkBox,
-    Location,
+    Date,
     WorkWrapper,
-    WorkTitle,
-    WorkDesc,
-    DescUnit
+    DescUnit,
+    ExperienceContainer
 } from "./experienceStyles";
 
 export default function Experience() {
@@ -26,14 +24,14 @@ export default function Experience() {
                     <WorkBox key={i + 2}>
                         <Date>{entry?.dates}</Date>
                         <WorkWrapper>
-                            <WorkTitle>{entry?.title}</WorkTitle>
-                            <Location>{isMobile ? entry?.place : entry?.place - entry?.dates}</Location>
-                            {isMobile ? <Location>{entry?.city}, {entry?.dates}</Location> : null}
-                            <WorkDesc>
+                            <SecondaryTitle>{entry?.title}</SecondaryTitle>
+                            <BodyText color={1}>{isMobile ? entry?.place : `${entry?.place} - ${entry?.city}`}</BodyText>
+                            {isMobile ? <BodyText color={1}>{entry?.city}, {entry?.dates}</BodyText> : null}
+                            <BodyText>
                                 {entry?.desc.map((exp, i) => {
                                     return <DescUnit key={i + 3} dangerouslySetInnerHTML={{__html: exp}} />
                                 })}
-                            </WorkDesc>
+                            </BodyText>
                         </WorkWrapper>
                     </WorkBox>
                 );

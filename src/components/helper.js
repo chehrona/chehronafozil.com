@@ -142,7 +142,7 @@ export const educationList = [
     {
         title: "Master of Science, Biochemistry",
         subtitle: "",
-        uni: "McGill University - Montréal, QC",
+        uni: "McGill University",
         buttons: {
             link: "https://escholarship.mcgill.ca/concern/theses/gb19fb412",
             name: "Thesis"
@@ -152,7 +152,7 @@ export const educationList = [
     {
         title: "Bachelor of Science, Biochemistry",
         subtitle: "Minor: Business Administration",
-        uni: "Maryville College - Maryville, TN",   
+        uni: "Maryville College",  
     }
 
 ];
@@ -179,7 +179,7 @@ export const certificateList = [
 
 export const experienceList = [
     {
-        dates: "2022 - Pres",
+        dates: "2022 - 2023",
         title: "Jr. Full Stack Developer",
         place: "nference",
         city: "Toronto, ON",

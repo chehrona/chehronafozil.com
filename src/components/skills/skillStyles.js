@@ -19,7 +19,6 @@ export const TextBox = styled.div`
     @media (max-width: 480px) {
         margin-top: -1.75rem;
         width: 100%;
-        padding: 0rem 1rem 1rem 1rem;
     }
 `;
 
@@ -37,12 +36,13 @@ export const ToolBox = styled.div`
 `;
 
 export const TextBody = styled.div`
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     color: #cfcdcd;
 
     @media (max-width: 480px) {
         font-size: 1.25rem;
-        margin-top: 1rem;
+        line-height: 1.75rem;
+        margin: 2rem 0.75rem 1rem 0.75rem;
     }
 `;
 

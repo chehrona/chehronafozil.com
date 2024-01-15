@@ -3,9 +3,10 @@ import { educationList } from "../helper";
 
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
+import { PageTitle } from "../commonStyles";
+
 import { 
     EducationContainer,
-    PageTitle,
     Link,
     ButtonWrapper,
     School,
@@ -26,11 +27,11 @@ export default function Education() {
                             <Cap icon={faGraduationCap} />
                             <div>
                                 {entry?.title}
-                                <DegreeSubtitle>
-                                    {entry?.subtitle}
-                                </DegreeSubtitle>
                             </div>
                         </DegreeWrapper>
+                        <DegreeSubtitle>
+                            {entry?.subtitle}
+                        </DegreeSubtitle>
                         <School>
                             {entry?.uni}
                         </School>
