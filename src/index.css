@@ -45,8 +45,9 @@ h2 {
     }
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 960px) {
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
     body {
-        background-color: green;
+        font-size: 1.5rem;
+        padding: 0rem;
     }
 }

@@ -13,6 +13,11 @@ export const LineOne = styled(IntroTitle)`
         left: 0.75rem;
         max-height: 3.3rem;
     }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+        left: 6rem;
+        max-height: 7rem;
+    }
 `;
 
 export const DescLine = styled.h2`
@@ -26,6 +31,11 @@ export const DescLine = styled.h2`
     @media (max-width: 480px) {
         white-space: pre-wrap;
         left: 0.75rem;
+    }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+        left: 6rem;
+        font-size: 1.55rem;
     }
 `;
 

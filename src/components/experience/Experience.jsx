@@ -14,7 +14,7 @@ import {
 } from "./experienceStyles";
 
 export default function Experience() {
-    const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
+    const isMobile = useMediaQuery({ query: `(max-width: 1024px)` });
 
     return (
         <ExperienceContainer>

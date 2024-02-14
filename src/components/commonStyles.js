@@ -7,6 +7,11 @@ export const IntroTitle = styled.div`
     @media (max-width: 480px) {
         font-size: 2.8rem;
     }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+        font-size: 5rem;
+    }
+
 `;
 
 export const PageTitle = styled.div`
@@ -21,6 +26,10 @@ export const PageTitle = styled.div`
         text-align: left;
         padding: 0rem 0.75rem 0rem 0.75rem ;
     }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+        padding: 0rem 1rem 2rem 6rem;
+    }
 `;
 
 export const SecondaryTitle = styled.div`
@@ -30,6 +39,10 @@ export const SecondaryTitle = styled.div`
     @media (max-width: 480px) {
         margin-top: 2rem;
     }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+        font-size: 1.75rem;
+    }
 `;
 
 export const BodyText = styled.div`
@@ -38,5 +51,9 @@ export const BodyText = styled.div`
 
     @media (max-width: 480px) {
         font-size: 1.25rem;
+    }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+        font-size: 1.55rem;
     }
 `;
