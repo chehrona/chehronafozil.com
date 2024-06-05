@@ -1,24 +1,33 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
-import Certificates from './components/certificates/Certificates';
-import Education from './components/education/Education';
-import Experience from './components/experience/Experience';
-import Footer from './components/footer/Footer.jsx';
-import Projects from './components/projects/Projects';
-import Skills from './components/skills/Skills';
-import FirstPage from './pages/FirstPage';
+import { Routes as ServerRoutes, Route, useLocation } from 'react-router-dom';
+
+// Pages
+import LandingPage from './pages/LandingPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+
+// Components
+import Footer from './components/footer/Footer';
+import SideNav from './components/sideNav/SideNav';
+import Logo from './components/logo/Logo';
 
 function App() {
+    const location = useLocation();
+    const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
+
     return (
-        <div>
-            <FirstPage />
-            <Experience />
-            <Projects />
-            <Skills />
-            <Education />
-            <Certificates />
+        <>
+            {!isMobile ? <SideNav /> : null}
+            <a href={'#firstPage'}>
+                <Logo />
+            </a>
+            <ServerRoutes location={location} key={location.pathname}>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/privacy" element={<PrivacyPolicyPage />} />
+            </ServerRoutes>
             <Footer />
-        </div>
+        </>
     );
 }
 
