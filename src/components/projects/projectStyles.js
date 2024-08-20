@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ProjectContainer = styled.div`
     margin: 1rem 0rem 5rem 0rem;
@@ -10,7 +10,7 @@ export const ProjectBox = styled.div`
     padding: 2rem;
     justify-content: space-between;
     align-items: flex-start;
-    flex-direction: ${({ right }) => !right && "row-reverse"};
+    flex-direction: ${({ right }) => !right && 'row-reverse'};
 
     &:hover {
         box-shadow: 0rem 0rem 0.625rem black;
@@ -43,6 +43,10 @@ export const ProjectDesc = styled.div`
 
 export const TechUsed = styled.div`
     margin-top: 3.125rem;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    gap: 0.5rem;
 
     @media (max-width: 480px) {
         margin-top: 2rem;
@@ -61,10 +65,10 @@ export const ProjectInfo = styled.div`
 `;
 
 export const StyledIcon = styled.i`
-    font-size: ${({ view }) => view ? "1.875rem" : "1.375rem"};
-    color: ${({ view }) => view ? "#212020" : "#cfcdcd"};
-    margin-bottom: ${({ view }) => view ? "0rem" : "1.25rem"};
-    margin-right: ${({ view }) => view ? "0rem" : "0.5rem"};
+    font-size: ${({ view }) => (view ? '1.875rem' : '1.5rem')};
+    color: ${({ view }) => (view ? '#212020' : '#cfcdcd')};
+    margin-bottom: ${({ view }) => (view ? '0rem' : '1.25rem')};
+    margin-right: ${({ view }) => (view ? '0rem' : '0.5rem')};
 
     @media (max-width: 480px) {
         font-size: 2rem;
@@ -87,7 +91,8 @@ export const ButtonBox = styled.div`
 `;
 
 export const Link = styled.a`
-    &:link, &:visited {
+    &:link,
+    &:visited {
         color: #212020;
         text-decoration: none;
     }
