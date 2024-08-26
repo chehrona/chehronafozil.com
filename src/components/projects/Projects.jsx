@@ -1,11 +1,11 @@
-import React from "react";
-import { useMediaQuery } from "react-responsive";
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
-import { projectList } from "../helper";
+import { projectList } from '../helper';
 
-import { PageTitle, SecondaryTitle } from "../commonStyles";
+import { PageTitle, SecondaryTitle } from '../commonStyles';
 
-import { 
+import {
     ProjectContainer,
     ProjectBox,
     ProjectDesc,
@@ -18,37 +18,68 @@ import {
     ButtonBox,
     ImageWrapper,
     ProjectImage,
-    StyledImg
-} from "./projectStyles";
+    StyledImg,
+    StyledTooltip,
+} from './projectStyles';
 
 export default function Projects() {
     const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
 
     return (
         <ProjectContainer>
-            <PageTitle align={"right"}>Things I've built</PageTitle>
+            <PageTitle align={'right'}>Things I've built</PageTitle>
             {projectList.map((entry, i) => {
                 return (
                     <ProjectBox right={entry.image.side}>
                         <ProjectInfo key={i}>
-                            {!isMobile ? <SecondaryTitle>{entry.title}</SecondaryTitle> : null}
-                            <ProjectDesc dangerouslySetInnerHTML={{__html: entry.desc}}></ProjectDesc>
+                            {!isMobile ? (
+                                <SecondaryTitle>{entry.title}</SecondaryTitle>
+                            ) : null}
+                            <ProjectDesc
+                                dangerouslySetInnerHTML={{ __html: entry.desc }}
+                            ></ProjectDesc>
                             <TechUsed>
                                 {entry.tech.map((item, j) => {
-                                    if (item.startsWith("/")) {
-                                        return <StyledImg key={j} src={process.env.PUBLIC_URL + item}></StyledImg>
-                                    } else {
-                                        return <StyledIcon key={j} className={item}></StyledIcon>
-                                    }
+                                    return (
+                                        <StyledTooltip
+                                            arrow
+                                            placement="top"
+                                            title={item.name}
+                                        >
+                                            {item.icon.startsWith('/') ? (
+                                                <StyledImg
+                                                    key={j}
+                                                    src={
+                                                        process.env.PUBLIC_URL +
+                                                        item.icon
+                                                    }
+                                                ></StyledImg>
+                                            ) : (
+                                                <StyledIcon
+                                                    key={j}
+                                                    className={item.icon}
+                                                ></StyledIcon>
+                                            )}
+                                        </StyledTooltip>
+                                    );
                                 })}
                             </TechUsed>
                             <ButtonBox>
                                 {entry.buttons.map((button, k) => {
                                     return (
-                                        <Link key={k} target={"_blank"} href={button.link}>
+                                        <Link
+                                            key={k}
+                                            target={'_blank'}
+                                            href={button.link}
+                                        >
                                             <ButtonWrapper>
-                                                <StyledIcon view={true} className={button.icon}></StyledIcon>
-                                                <ButtonName>{button.name}</ButtonName>
+                                                <StyledIcon
+                                                    view={true}
+                                                    className={button.icon}
+                                                ></StyledIcon>
+                                                <ButtonName>
+                                                    {button.name}
+                                                </ButtonName>
                                             </ButtonWrapper>
                                         </Link>
                                     );
@@ -56,12 +87,16 @@ export default function Projects() {
                             </ButtonBox>
                         </ProjectInfo>
                         <ImageWrapper>
-                            {isMobile ? <SecondaryTitle>{entry.title}</SecondaryTitle> : null}
-                            <ProjectImage src={process.env.PUBLIC_URL + entry?.image.src} />
+                            {isMobile ? (
+                                <SecondaryTitle>{entry.title}</SecondaryTitle>
+                            ) : null}
+                            <ProjectImage
+                                src={process.env.PUBLIC_URL + entry?.image.src}
+                            />
                         </ImageWrapper>
                     </ProjectBox>
                 );
             })}
         </ProjectContainer>
-    )
+    );
 }

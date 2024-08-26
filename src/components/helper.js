@@ -82,12 +82,15 @@ export const projectList = [
         title: 'thetajikheritage.com',
         desc: 'A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.<br><br>* Self-hosted in a personal server.',
         tech: [
-            'devicon-react-original',
-            'devicon-nodejs-plain',
-            'devicon-express-original',
-            'devicon-mongodb-plain',
-            'devicon-docker-plain',
-            '/caddy.png',
+            { name: 'React.js', icon: 'devicon-react-original' },
+            { name: 'Material UI', icon: 'devicon-materialui-plain' },
+            { name: 'styled-components', icon: '/styled.png' },
+            { name: 'Node.js', icon: 'devicon-nodejs-plain' },
+            { name: 'Express.js', icon: 'devicon-express-original' },
+            { name: 'RESTful API', icon: 'fa-solid fa-cogs' },
+            { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
+            { name: 'Docker', icon: 'devicon-docker-plain' },
+            { name: 'Caddy', icon: '/caddy.png' },
         ],
         buttons: [
             {
@@ -112,17 +115,23 @@ export const projectList = [
         },
     },
     {
-        title: 'Recipe Manager',
+        title: 'Closet Organizer',
         desc: 'I have nothing to wear! Everyone has thought it once (if not daily) despite having tons of clothes. The app is intended help you organize your closet, create looks, plan outfits ahead and even keep track of how many times an item has been worn.',
         tech: [
-            'devicon-react-original',
-            'fa-brands fa-pinterest',
-            'devicon-flask-original',
-            'devicon-firebase-plain',
+            // { name: 'React Native', icon: 'devicon-react-original' },
+            // { name: 'TypeScript', icon: 'devicon-typescript-original' },
+            // { name: 'Pinterest API', icon: 'fa-brands fa-pinterest' },
+            // { name: 'Flask', icon: 'devicon-flask-original' },
+            // { name: 'GraphQL', icon: 'devicon-graphql-plain' },
+            // { name: 'PostreSQL', icon: 'devicon-postgresql-plain' },
+            { name: 'HTML', icon: 'devicon-html5-plain' },
+            { name: 'CSS', icon: 'devicon-css3-plain' },
+            { name: 'JavaScript', icon: 'devicon-javascript-plain' },
+            { name: 'Firebase', icon: 'devicon-firebase-plain' },
         ],
         buttons: [
             {
-                link: 'https://chehrona.github.io/Closet-App/',
+                link: 'https://chehrona.github.io/Closet-App/clothes.html',
                 icon: 'fa-solid fa-play',
                 name: 'Run',
             },
@@ -131,6 +140,11 @@ export const projectList = [
                 icon: 'fa-brands fa-github',
                 name: 'Source',
             },
+            // {
+            //     link: 'https://github.com/chehrona/RecipeManager-backend',
+            //     icon: 'fa-brands fa-github',
+            //     name: 'Backend',
+            // },
         ],
         image: {
             side: false,
@@ -141,10 +155,13 @@ export const projectList = [
         title: 'Multiplayer Rock-Paper-Scissors',
         desc: 'Chinese or Pizza? Enter your name and test your fate, put an end to that debate. The chat functionality allows for extra intimidation as the race for the win gets heated.',
         tech: [
-            'devicon-html5-plain',
-            'devicon-css3-plain',
-            'devicon-javascript-plain',
-            'devicon-firebase-plain',
+            { name: 'HTML', icon: 'devicon-html5-plain' },
+            { name: 'CSS', icon: 'devicon-css3-plain' },
+            { name: 'JavaScript', icon: 'devicon-javascript-plain' },
+            // { name: 'Sass', icon: 'devicon-sass-original' },
+            // { name: 'React', icon: 'devicon-react-plain' },
+            // { name: 'TypeScript', icon: 'devicon-typescript-plain' },
+            { name: 'Firebase', icon: 'devicon-firebase-plain' },
         ],
         buttons: [
             {

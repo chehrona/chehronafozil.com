@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Tooltip, tooltipClasses } from '@mui/material';
 
 export const ProjectContainer = styled.div`
     margin: 1rem 0rem 5rem 0rem;
@@ -7,7 +8,7 @@ export const ProjectContainer = styled.div`
 export const ProjectBox = styled.div`
     display: flex;
     margin-top: 1.25rem;
-    padding: 2rem;
+    padding: 2rem 0rem;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: ${({ right }) => !right && 'row-reverse'};
@@ -39,14 +40,15 @@ export const ProjectName = styled.div`
 
 export const ProjectDesc = styled.div`
     color: #cfcdcd;
+    margin-top: 1rem;
 `;
 
 export const TechUsed = styled.div`
-    margin-top: 3.125rem;
+    margin-top: 2rem;
     display: flex;
-    align-items: center;
     height: 2rem;
     gap: 0.5rem;
+    align-items: center;
 
     @media (max-width: 480px) {
         margin-top: 2rem;
@@ -56,6 +58,7 @@ export const TechUsed = styled.div`
 export const ProjectInfo = styled.div`
     width: 50%;
     text-align: left;
+    padding: 0rem 2rem;
 
     @media (max-width: 480px) {
         width: 100%;
@@ -64,10 +67,32 @@ export const ProjectInfo = styled.div`
     }
 `;
 
+export const StyledTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+))(() => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+        fontSize: '1rem',
+        color: '#212020',
+        fontFamily: 'inherit',
+        fontWeight: 'normal',
+        padding: '0.25rem 0.5rem',
+    },
+    [`& .${tooltipClasses.tooltipArrow}`]: {
+        backgroundColor: 'white',
+    },
+    [`& .${tooltipClasses.arrow}`]: {
+        color: 'white',
+    },
+    '@media (max-width: 1024px)': {
+        [`& .${tooltipClasses.tooltip}`]: {
+            display: 'none',
+        },
+    },
+}));
+
 export const StyledIcon = styled.i`
     font-size: ${({ view }) => (view ? '1.875rem' : '1.5rem')};
     color: ${({ view }) => (view ? '#212020' : '#cfcdcd')};
-    margin-bottom: ${({ view }) => (view ? '0rem' : '1.25rem')};
     margin-right: ${({ view }) => (view ? '0rem' : '0.5rem')};
 
     @media (max-width: 480px) {
@@ -76,7 +101,7 @@ export const StyledIcon = styled.i`
 `;
 
 export const StyledImg = styled.img`
-    height: 1.3rem;
+    height: 1.5rem;
 
     @media (max-width: 480px) {
         height: 1.8rem;
@@ -99,7 +124,7 @@ export const Link = styled.a`
 `;
 
 export const ButtonName = styled.div`
-    margin-left: 0.3125rem;
+    margin-left: 0.35rem;
 `;
 
 export const ButtonWrapper = styled.div`
