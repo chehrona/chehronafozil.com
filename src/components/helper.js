@@ -4,6 +4,10 @@ export const tech = [
         title: 'React',
     },
     {
+        icon: 'devicon-react-original',
+        title: 'React Native',
+    },
+    {
         icon: 'devicon-typescript-plain',
         title: 'TypeScript',
     },
@@ -48,10 +52,6 @@ export const tech = [
         title: 'GitHub',
     },
     {
-        icon: 'devicon-vim-plain',
-        title: 'Vim',
-    },
-    {
         icon: 'devicon-firebase-plain',
         title: 'Firebase',
     },
@@ -83,6 +83,7 @@ export const projectList = [
         desc: 'A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.<br><br>* Self-hosted in a personal server.',
         tech: [
             { name: 'React.js', icon: 'devicon-react-original' },
+            { name: 'TypeScript', icon: 'devicon-typescript-original' },
             { name: 'Material UI', icon: 'devicon-materialui-plain' },
             { name: 'styled-components', icon: '/styled.png' },
             { name: 'Node.js', icon: 'devicon-nodejs-plain' },
@@ -220,7 +221,7 @@ export const certificateList = [
 
 export const experienceList = [
     {
-        dates: '2022 - 2023',
+        dates: '2022 - Present',
         title: 'Jr. Full Stack Developer',
         place: 'nference',
         city: 'Toronto, ON',
