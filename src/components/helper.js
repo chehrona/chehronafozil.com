@@ -221,7 +221,7 @@ export const certificateList = [
 
 export const experienceList = [
     {
-        dates: '2022 - Present',
+        dates: '2022 - Pres.',
         title: 'Jr. Full Stack Developer',
         place: 'nference',
         city: 'Toronto, ON',
