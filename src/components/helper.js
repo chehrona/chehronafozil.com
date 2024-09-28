@@ -221,7 +221,7 @@ export const certificateList = [
 
 export const experienceList = [
     {
-        dates: '2022 - Pres.',
+        dates: '2022 - 2023',
         title: 'Jr. Full Stack Developer',
         place: 'nference',
         city: 'Toronto, ON',
@@ -229,11 +229,11 @@ export const experienceList = [
             '• Built a fea&shyture for on&shyboard&shying tours by in&shyteg&shyrat&shying in&shyte&shyract&shyive ele&shyments and mul&shyti-page ca&shypa&shybi&shyli&shyties by fork&shying the Shepherd.js lib&shyra&shyry',
             '• Stream&shylined tour crea&shytion/ mo&shydi&shyfi&shyca&shytion with a user-friend&shyly side&shybar, re&shyduc&shying reliance on developers',
             '• Au&shyto&shymated slide re&shynam&shying for QC by ex&shytract&shying vi&shytal da&shyta, such as case ID, from slide barcodes',
-            '• De&shyve&shylop&shying scan&shyner hard&shyware error re&shyport&shying for im&shyproved issue track&shying, centralized knowledge base and operator in&shyfor&shyma&shytion shar&shying be&shytween shifts',
+            '• De&shyve&shyloped scan&shyner hard&shyware error re&shyport&shying for im&shyproved issue track&shying, centralized knowledge base and operator in&shyfor&shyma&shytion shar&shying be&shytween shifts',
         ],
     },
     {
-        dates: '2020 - 2021',
+        dates: '2020 - 2022',
         title: 'Research Technician I',
         place: 'University Health Network',
         city: 'Toronto, ON',
@@ -245,7 +245,7 @@ export const experienceList = [
     },
     {
         dates: '2018 - 2020',
-        title: 'Teaching Assistant',
+        title: 'Graduate Teaching Assistant',
         place: 'McGill University',
         city: 'Montréal, QC',
         desc: [
