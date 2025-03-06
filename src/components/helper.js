@@ -80,7 +80,7 @@ export const tech = [
 export const projectList = [
     {
         title: 'thetajikheritage.com',
-        desc: 'A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.<br><br>* Self-hosted in a personal server.',
+        desc: 'A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.<br><br>* Hosted in AWS EC2 with Docker.',
         tech: [
             { name: 'React.js', icon: 'devicon-react-original' },
             { name: 'TypeScript', icon: 'devicon-typescript-original' },
@@ -92,6 +92,7 @@ export const projectList = [
             { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
             { name: 'Docker', icon: 'devicon-docker-plain' },
             { name: 'Caddy', icon: '/caddy.png' },
+            { name: 'AWS', icon: '/aws.png' },
         ],
         buttons: [
             {
@@ -221,6 +222,18 @@ export const certificateList = [
 
 export const experienceList = [
     {
+        dates: '2024 - Pres.',
+        title: 'Software Engineer',
+        place: 'gloApp (early startup)',
+        city: 'Toronto, ON',
+        desc: [
+            '• Design and implement the mobile app architecture from the ground up using <b>React Native (TypeScript)</b> for frontend and <b>Django with SQL</b> for backend',
+            '• Develop full-stack features based on Figma mockups, ensuring responsiveness and intuitive user experience',
+            '• Build and optimize RESTful APIs to enable secure and efficient communication between the app and backend',
+            '• Lead <b>Agile</b> sprint planning by creating, assigning, and tracking development tasks using <b>Jira</b>',
+        ],
+    },
+    {
         dates: '2022 - 2023',
         title: 'Jr. Full Stack Developer',
         place: 'nference',
@@ -234,7 +247,7 @@ export const experienceList = [
     },
     {
         dates: '2020 - 2022',
-        title: 'Research Technician I',
+        title: 'Research Technician',
         place: 'University Health Network',
         city: 'Toronto, ON',
         desc: [
