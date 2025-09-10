@@ -80,19 +80,23 @@ export const tech = [
 export const projectList = [
     {
         title: 'thetajikheritage.com',
-        desc: 'A website dedicated to preserving and showcasing the cultural, historical, and linguistic treasures that define the identity of the Tajik people.<br><br>* Hosted in AWS EC2 with Docker.',
+        desc: 'A digital corner for all things Tajik — from history to language quirks, and everything in between. I’m a self-confessed history and language nerd, so I built this site to tag along with my Instagram page (with a whopping 1000+ followers!) and give my obsession with Tajik culture a proper home.<br><br>* Hosted in AWS EC2 with Docker.',
         tech: [
+            {
+                name: 'Next.js',
+                icon: 'devicon-nextjs-original',
+            },
             { name: 'React.js', icon: 'devicon-react-original' },
             { name: 'TypeScript', icon: 'devicon-typescript-original' },
             { name: 'Material UI', icon: 'devicon-materialui-plain' },
-            { name: 'styled-components', icon: '/styled.png' },
             { name: 'Node.js', icon: 'devicon-nodejs-plain' },
             { name: 'Express.js', icon: 'devicon-express-original' },
+            { name: 'Meilisearch', icon: '/icons/meili.svg' },
             { name: 'RESTful API', icon: 'fa-solid fa-cogs' },
             { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
             { name: 'Docker', icon: 'devicon-docker-plain' },
-            { name: 'Caddy', icon: '/caddy.png' },
-            { name: 'AWS', icon: '/aws.png' },
+            { name: 'Caddy', icon: '/icons/caddy.svg' },
+            { name: 'AWS', icon: '/icons/aws.svg' },
         ],
         buttons: [
             {
@@ -101,14 +105,9 @@ export const projectList = [
                 name: 'Run',
             },
             {
-                link: 'https://github.com/chehrona/tajikheritage_frontend',
+                link: 'https://github.com/chehrona/tajikheritage_ssr',
                 icon: 'fa-brands fa-github',
-                name: 'Frontend',
-            },
-            {
-                link: 'https://github.com/chehrona/tajikheritage_backend',
-                icon: 'fa-brands fa-github',
-                name: 'Backend',
+                name: 'Source',
             },
         ],
         image: {
@@ -117,19 +116,12 @@ export const projectList = [
         },
     },
     {
-        title: 'Closet Organizer',
+        title: 'Farhang Dictionary',
         desc: 'I have nothing to wear! Everyone has thought it once (if not daily) despite having tons of clothes. The app is intended help you organize your closet, create looks, plan outfits ahead and even keep track of how many times an item has been worn.',
         tech: [
-            // { name: 'React Native', icon: 'devicon-react-original' },
-            // { name: 'TypeScript', icon: 'devicon-typescript-original' },
-            // { name: 'Pinterest API', icon: 'fa-brands fa-pinterest' },
-            // { name: 'Flask', icon: 'devicon-flask-original' },
-            // { name: 'GraphQL', icon: 'devicon-graphql-plain' },
-            // { name: 'PostreSQL', icon: 'devicon-postgresql-plain' },
-            { name: 'HTML', icon: 'devicon-html5-plain' },
-            { name: 'CSS', icon: 'devicon-css3-plain' },
-            { name: 'JavaScript', icon: 'devicon-javascript-plain' },
-            { name: 'Firebase', icon: 'devicon-firebase-plain' },
+            { name: 'React Native', icon: 'devicon-reactnative-original' },
+            { name: 'Django', icon: 'devicon-django-plain' },
+            { name: 'mySQL', icon: 'devicon-mysql-original' },
         ],
         buttons: [
             {
@@ -196,7 +188,7 @@ export const educationList = [
     },
     {
         title: 'Bachelor of Science, Biochemistry',
-        subtitle: 'Minor: Business Administration',
+        subtitle: 'Minor: Computer Science',
         uni: 'Maryville College',
     },
 ];
@@ -224,7 +216,7 @@ export const experienceList = [
     {
         dates: '2024 - Pres.',
         title: 'Software Engineer',
-        place: 'gloApp (early startup)',
+        place: 'gloApp',
         city: 'Toronto, ON',
         desc: [
             '• Design and implement the mobile app architecture from the ground up using <b>React Native (TypeScript)</b> for frontend and <b>Django with SQL</b> for backend',
@@ -235,7 +227,7 @@ export const experienceList = [
     },
     {
         dates: '2022 - 2023',
-        title: 'Jr. Full Stack Developer',
+        title: 'Full Stack Developer',
         place: 'nference',
         city: 'Toronto, ON',
         desc: [
