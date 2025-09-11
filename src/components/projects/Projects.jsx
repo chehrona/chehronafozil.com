@@ -46,14 +46,14 @@ export default function Projects() {
                                             placement="top"
                                             title={item.name}
                                         >
-                                            {item.icon.startsWith('/') ? (
+                                            {item.icon.startsWith('/icons') ? (
                                                 <StyledImg
                                                     key={j}
                                                     src={
                                                         process.env.PUBLIC_URL +
                                                         item.icon
                                                     }
-                                                ></StyledImg>
+                                                />
                                             ) : (
                                                 <StyledIcon
                                                     key={j}
