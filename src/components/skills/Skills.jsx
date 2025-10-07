@@ -11,11 +11,9 @@ export default function Skills() {
     return (
         <MainContainer>
             <TextBox>
-                <PageTitle>My toolbox to bring your projects to life</PageTitle>
+                <PageTitle>Some technologies I have been working with</PageTitle>
                 <TextBody>
-                    As a self-taught developer, I dabbled a bit with different areas of programming, 
-                    including data analytics. This allowed me to find my passion in web-development. I love creating websites that offer great user experience
-                    and have a maintainable codebase.
+                    I love creating products that scale beautifully and genuinely improve how people work and live.
                 </TextBody>
             </TextBox>
             <ToolBox>

@@ -1,86 +1,36 @@
 export const tech = [
-    {
-        icon: 'devicon-react-original',
-        title: 'React',
-    },
-    {
-        icon: 'devicon-react-original',
-        title: 'React Native',
-    },
-    {
-        icon: 'devicon-typescript-plain',
-        title: 'TypeScript',
-    },
-    {
-        icon: 'devicon-javascript-plain',
-        title: 'JavaScript',
-    },
-    {
-        icon: 'devicon-docker-plain',
-        title: 'Docker',
-    },
-    {
-        icon: 'devicon-mongodb-plain',
-        title: 'mongoDB',
-    },
-    {
-        icon: 'devicon-nodejs-plain',
-        title: 'Node.js',
-    },
-    {
-        icon: 'devicon-express-original',
-        title: 'Express.js',
-    },
-    {
-        icon: 'devicon-jquery-plain',
-        title: 'jQuery',
-    },
-    {
-        icon: 'devicon-html5-plain',
-        title: 'HTML5',
-    },
-    {
-        icon: 'devicon-css3-plain',
-        title: 'CSS3',
-    },
-    {
-        icon: 'devicon-git-plain',
-        title: 'Git',
-    },
-    {
-        icon: 'devicon-github-plain',
-        title: 'GitHub',
-    },
-    {
-        icon: 'devicon-firebase-plain',
-        title: 'Firebase',
-    },
-    {
-        icon: 'fa-solid fa-cogs',
-        title: 'RESTful API',
-    },
-    {
-        icon: 'devicon-mysql-plain',
-        title: 'MySQL',
-    },
-    {
-        icon: 'devicon-jira-plain',
-        title: 'Jira',
-    },
-    {
-        icon: 'devicon-confluence-original',
-        title: 'Confluence',
-    },
-    {
-        icon: 'devicon-figma-plain',
-        title: 'Figma',
-    },
+    { icon: 'devicon-react-original', title: 'React' },
+    { icon: 'devicon-react-original', title: 'React Native' },
+    { icon: 'devicon-typescript-plain', title: 'TypeScript' },
+    { icon: 'devicon-javascript-plain', title: 'JavaScript' },
+    { icon: 'devicon-html5-plain', title: 'HTML5' },
+    { icon: 'devicon-css3-plain', title: 'CSS3' },
+    { icon: 'devicon-jquery-plain', title: 'jQuery' },
+
+    // Backend
+    { icon: 'devicon-nodejs-plain', title: 'Node.js' },
+    { icon: 'devicon-express-original', title: 'Express.js' },
+    { icon: 'devicon-django-plain', title: 'Django' },
+    { icon: 'devicon-python-plain', title: 'Python' },
+    { icon: 'fa-solid fa-cogs', title: 'RESTful API' },
+    { icon: 'devicon-docker-plain', title: 'Docker' },
+
+    // Database
+    { icon: 'devicon-mongodb-plain', title: 'MongoDB' },
+    { icon: 'devicon-mysql-plain', title: 'MySQL' },
+    { icon: 'devicon-firebase-plain', title: 'Firebase' },
+
+    // Extra
+    { icon: 'devicon-git-plain', title: 'Git' },
+    { icon: 'devicon-github-plain', title: 'GitHub' },
+    { icon: 'devicon-jira-plain', title: 'Jira' },
+    { icon: 'devicon-figma-plain', title: 'Figma' },
 ];
 
 export const projectList = [
     {
         title: 'thetajikheritage.com',
-        desc: 'A digital corner for all things Tajik — from history to language quirks, and everything in between. I’m a self-confessed history and language nerd, so I built this site to tag along with my Instagram page (with a whopping 1000+ followers!) and give my obsession with Tajik culture a proper home.<br><br>* Hosted in AWS EC2 with Docker.',
+        desc: 'A digital corner for all things Tajik, from history to language quirks, and everything in between. I’m a self-confessed history and language nerd, so I built this site to tag along with my Instagram page (with a whopping 1000+ followers!) and give my obsession with Tajik culture a proper home.<br><br>* Hosted on AWS EC2 with Docker.',
         tech: [
             {
                 name: 'Next.js',
@@ -103,36 +53,45 @@ export const projectList = [
                 link: 'https://www.thetajikheritage.com/',
                 icon: 'fa-solid fa-play',
                 name: 'Run',
-            },
-            {
-                link: 'https://github.com/chehrona/tajikheritage_ssr',
-                icon: 'fa-brands fa-github',
-                name: 'Source',
-            },
+            }
         ],
         image: {
             side: true,
-            src: '/project_1.png',
+            src: '/1.png',
         },
     },
     {
         title: 'Farhang Dictionary',
-        desc: 'I have nothing to wear! Everyone has thought it once (if not daily) despite having tons of clothes. The app is intended help you organize your closet, create looks, plan outfits ahead and even keep track of how many times an item has been worn.',
+        desc: 'I came across many Reddit posts from people looking for a good electronic Tajik dictionary, so I jumped on the opportunity to build one. Now it’s a full platform, accessible on the web and through an iOS app, where users can sign in, favorite words, and play language games.<br><br>* The Android app is currently in testing.',
         tech: [
-            { name: 'React Native', icon: 'devicon-reactnative-original' },
+            { name: 'React Native', icon: 'devicon-react-original' },
+            { name: 'React Navigation', icon: '/icons/reactnavigation.svg' },
+            {
+                name: 'Next.js',
+                icon: 'devicon-nextjs-original',
+            },
             { name: 'Django', icon: 'devicon-django-plain' },
-            { name: 'mySQL', icon: 'devicon-mysql-original' },
+            { name: 'MySQL', icon: 'devicon-mysql-plain' },
+            { name: 'RESTful API', icon: 'fa-solid fa-cogs' },
+            { name: 'Docker', icon: 'devicon-docker-plain' },
+            { name: 'Caddy', icon: '/icons/caddy.svg' },
+            { name: 'AWS', icon: '/icons/aws.svg' },
         ],
         buttons: [
             {
-                link: 'https://chehrona.github.io/Closet-App/clothes.html',
-                icon: 'fa-solid fa-play',
-                name: 'Run',
+                link: 'https://apps.apple.com/us/app/farhang/id6747536754',
+                icon: 'fa-brands fa-apple',
+                name: 'iOS',
             },
+            // {
+            //     link: 'https://apps.apple.com/us/app/farhang/id6747536754',
+            //     icon: 'devicon-android-plain',
+            //     name: 'Android',
+            // },
             {
-                link: 'https://github.com/chehrona/Closet-App',
-                icon: 'fa-brands fa-github',
-                name: 'Source',
+                link: 'https://farhang.thetajikheritage.com/en',
+                icon: 'fa-solid fa-play',
+                name: 'Web',
             },
             // {
             //     link: 'https://github.com/chehrona/RecipeManager-backend',
@@ -142,7 +101,7 @@ export const projectList = [
         ],
         image: {
             side: false,
-            src: '/closet.png',
+            src: '/2.png',
         },
     },
     {
@@ -171,7 +130,7 @@ export const projectList = [
         ],
         image: {
             side: true,
-            src: '/rps.png',
+            src: '/3.png',
         },
     },
 ];

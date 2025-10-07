@@ -13,18 +13,10 @@ export const ProjectBox = styled.div`
     align-items: flex-start;
     flex-direction: ${({ right }) => !right && 'row-reverse'};
 
-    &:hover {
-        box-shadow: 0rem 0rem 0.625rem black;
-    }
-
     @media (max-width: 480px) {
         margin: 0rem;
         padding: 0rem 0.75rem 2rem 0.75rem;
         flex-direction: column-reverse;
-
-        &:hover {
-            box-shadow: none;
-        }
     }
 `;
 
@@ -47,7 +39,7 @@ export const TechUsed = styled.div`
     margin-top: 2rem;
     display: flex;
     height: 2rem;
-    gap: 0.5rem;
+    gap: 0.75rem;
     align-items: center;
 
     @media (max-width: 480px) {
@@ -91,9 +83,10 @@ export const StyledTooltip = styled(({ className, ...props }) => (
 }));
 
 export const StyledIcon = styled.i`
-    font-size: ${({ view }) => (view ? '1.875rem' : '1.5rem')};
+    font-size: 1.5rem;
     color: ${({ view }) => (view ? '#212020' : '#cfcdcd')};
-    margin-right: ${({ view }) => (view ? '0rem' : '0.5rem')};
+    width: 1.5rem;
+    cursor: pointer;
 
     @media (max-width: 480px) {
         font-size: 2rem;
@@ -102,6 +95,9 @@ export const StyledIcon = styled.i`
 
 export const StyledImg = styled.img`
     height: 1.5rem;
+    width: 1.5rem;
+    max-width: 1.5rem;
+    cursor: pointer;
 
     @media (max-width: 480px) {
         height: 1.8rem;
@@ -111,7 +107,6 @@ export const StyledImg = styled.img`
 export const ButtonBox = styled.div`
     display: flex;
     width: 12.5rem;
-    justify-content: space-between;
     margin-top: 1.25rem;
 `;
 
@@ -121,10 +116,6 @@ export const Link = styled.a`
         color: #212020;
         text-decoration: none;
     }
-`;
-
-export const ButtonName = styled.div`
-    margin-left: 0.35rem;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -137,6 +128,7 @@ export const ButtonWrapper = styled.div`
     color: #212020;
     margin-right: 1.25rem;
     align-items: center;
+    gap: 0.25rem;
     box-shadow: 0rem 0rem 0.625rem black;
 
     @media (max-width: 480px) {
@@ -157,7 +149,6 @@ export const ImageWrapper = styled.div`
 export const ProjectImage = styled.img`
     height: auto;
     width: 100%;
-    filter: drop-shadow(0rem 0rem 0.13rem #8b8c8f);
 
     @media (max-width: 480px) {
         margin-top: 1.25rem;

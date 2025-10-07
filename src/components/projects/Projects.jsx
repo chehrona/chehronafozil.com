@@ -13,7 +13,6 @@ import {
     TechUsed,
     StyledIcon,
     Link,
-    ButtonName,
     ButtonWrapper,
     ButtonBox,
     ImageWrapper,
@@ -37,7 +36,7 @@ export default function Projects() {
                             ) : null}
                             <ProjectDesc
                                 dangerouslySetInnerHTML={{ __html: entry.desc }}
-                            ></ProjectDesc>
+                            />
                             <TechUsed>
                                 {entry.tech.map((item, j) => {
                                     return (
@@ -58,7 +57,7 @@ export default function Projects() {
                                                 <StyledIcon
                                                     key={j}
                                                     className={item.icon}
-                                                ></StyledIcon>
+                                                />
                                             )}
                                         </StyledTooltip>
                                     );
@@ -76,10 +75,10 @@ export default function Projects() {
                                                 <StyledIcon
                                                     view={true}
                                                     className={button.icon}
-                                                ></StyledIcon>
-                                                <ButtonName>
+                                                />
+                                                <div>
                                                     {button.name}
-                                                </ButtonName>
+                                                </div>
                                             </ButtonWrapper>
                                         </Link>
                                     );
@@ -91,7 +90,7 @@ export default function Projects() {
                                 <SecondaryTitle>{entry.title}</SecondaryTitle>
                             ) : null}
                             <ProjectImage
-                                src={process.env.PUBLIC_URL + entry?.image.src}
+                                src={`${process.env.PUBLIC_URL}projects/${entry?.image.src}`}
                             />
                         </ImageWrapper>
                     </ProjectBox>
