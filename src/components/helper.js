@@ -12,7 +12,7 @@ export const tech = [
     { icon: 'devicon-express-original', title: 'Express.js' },
     { icon: 'devicon-django-plain', title: 'Django' },
     { icon: 'devicon-python-plain', title: 'Python' },
-    { icon: 'fa-solid fa-cogs', title: 'RESTful API' },
+    { icon: 'api', title: 'RESTful API' },
     { icon: 'devicon-docker-plain', title: 'Docker' },
 
     // Database
@@ -41,18 +41,18 @@ export const projectList = [
             { name: 'Material UI', icon: 'devicon-materialui-plain' },
             { name: 'Node.js', icon: 'devicon-nodejs-plain' },
             { name: 'Express.js', icon: 'devicon-express-original' },
-            { name: 'Meilisearch', icon: '/icons/meili.svg' },
-            { name: 'RESTful API', icon: 'fa-solid fa-cogs' },
+            { name: 'Meilisearch', icon: 'meili' },
+            { name: 'RESTful API', icon: 'api' },
             { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
             { name: 'Docker', icon: 'devicon-docker-plain' },
-            { name: 'Caddy', icon: '/icons/caddy.svg' },
-            { name: 'AWS', icon: '/icons/aws.svg' },
+            { name: 'Caddy', icon: 'caddy' },
+            { name: 'AWS', icon: 'aws' },
         ],
         buttons: [
             {
                 link: 'https://www.thetajikheritage.com/',
-                icon: 'fa-solid fa-play',
-                name: 'Run',
+                icon: 'web',
+                name: 'Visit',
             }
         ],
         image: {
@@ -65,22 +65,22 @@ export const projectList = [
         desc: 'I came across many Reddit posts from people looking for a good electronic Tajik dictionary, so I jumped on the opportunity to build one. Now it’s a full platform, accessible on the web and through an iOS app, where users can sign in, favorite words, and play vocabulary games.<br><br>▹ The Android app is currently in testing.',
         tech: [
             { name: 'React Native', icon: 'devicon-react-original' },
-            { name: 'React Navigation', icon: '/icons/reactnavigation.svg' },
+            { name: 'React Navigation', icon: 'reactnav' },
             {
                 name: 'Next.js',
                 icon: 'devicon-nextjs-original',
             },
             { name: 'Django', icon: 'devicon-django-plain' },
             { name: 'MySQL', icon: 'devicon-mysql-plain' },
-            { name: 'RESTful API', icon: 'fa-solid fa-cogs' },
+            { name: 'RESTful API', icon: 'api' },
             { name: 'Docker', icon: 'devicon-docker-plain' },
-            { name: 'Caddy', icon: '/icons/caddy.svg' },
-            { name: 'AWS', icon: '/icons/aws.svg' },
+            { name: 'Caddy', icon: 'caddy' },
+            { name: 'AWS', icon: 'aws' },
         ],
         buttons: [
             {
                 link: 'https://apps.apple.com/us/app/farhang/id6747536754',
-                icon: 'fa-brands fa-apple',
+                icon: 'ios',
                 name: 'iOS',
             },
             // {
@@ -90,8 +90,8 @@ export const projectList = [
             // },
             {
                 link: 'https://farhang.thetajikheritage.com/en',
-                icon: 'fa-solid fa-play',
-                name: 'Web',
+                icon: 'web',
+                name: 'Visit',
             },
             // {
             //     link: 'https://github.com/chehrona/RecipeManager-backend',
@@ -119,12 +119,12 @@ export const projectList = [
         buttons: [
             {
                 link: 'https://chehrona.github.io/RPS-Multiplayer/',
-                icon: 'fa-solid fa-play',
-                name: 'Run',
+                icon: 'web',
+                name: 'Visit',
             },
             {
                 link: 'https://github.com/chehrona/RPS-Multiplayer',
-                icon: 'fa-brands fa-github',
+                icon: 'github',
                 name: 'Source',
             },
         ],

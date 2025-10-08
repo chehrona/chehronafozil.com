@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { GitHub, LinkedIn, MailOutline } from "@mui/icons-material";
 
 export const MainContainer = styled.div`
     position: fixed;
@@ -22,7 +21,7 @@ export const MainContainer = styled.div`
 export const SideLine = styled.div`
     width: 0.125rem;
     height: 3.625rem;
-    background-color: white;
+    background-color: var(--highlight);
     margin: 0 auto;
 
     @media (max-width: 480px) {
@@ -30,46 +29,11 @@ export const SideLine = styled.div`
     }
 `;
 
-export const StyledMail = styled(MailOutline)`
-    margin-bottom: 0.5rem;
-    color: var(--white);
+export const Link = styled.a`
     filter: brightness(60%);
-
-    &.MuiSvgIcon-root {
-        font-size: 1.7rem;
-    }
-
-    &:hover {
-        filter: brightness(100%);  
-    }
-
-    @media (max-width: 480px) {
-        margin-left: 1rem;;
-    }
-`;
-
-export const StyledGitHub = styled(GitHub)`
-    margin-bottom: 0.5rem;
-    color: var(--white);
-    filter: brightness(60%);
-
-    &.MuiSvgIcon-root {
-        font-size: 1.7rem;
-    }
-
-    &:hover {
-        filter: brightness(100%);  
-    }
-`;
-
-export const StyledLinkedIn = styled(LinkedIn)`
-    margin-bottom: 0.5rem;
-    color: var(--white);
-    filter: brightness(60%);
-
-    &.MuiSvgIcon-root {
-        font-size: 1.7rem;
-    }
+    width: var(--section);
+    height: var(--section);
+    transition: filter 0.5s;
 
     &:hover {
         filter: brightness(100%);  

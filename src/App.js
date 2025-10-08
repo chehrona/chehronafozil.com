@@ -2,12 +2,18 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 // Pages
-import LandingPage from './pages/LandingPage';
+import LandingPage from './pages/landing/LandingPage';
+import Experience from './pages/experience/Experience';
+import Projects from './pages/projects/Projects';
+import Skills from './pages/skills/Skills';
+import Education from './pages/education/Education';
+import Certificates from './pages/certificates/Certificates';
 
 // Components
 import Footer from './components/footer/Footer';
 import SideNav from './components/sideNav/SideNav';
 import Logo from './components/logo/Logo';
+
 
 function App() {
     const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
@@ -19,6 +25,11 @@ function App() {
                 <Logo />
             </a>
             <LandingPage />
+            <Experience />
+            <Projects />
+            <Skills />
+            <Education />
+            <Certificates />
             <Footer />
         </>
     );

@@ -1,13 +1,8 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export const EducationContainer = styled.div`
-    margin-bottom: 3rem;
-`;
 
 export const EducationBox = styled.div`
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1rem 0rem;
 
     @media (max-width: 480px) {
@@ -20,7 +15,15 @@ export const DegreeWrapper = styled.div`
     line-height: var(--section);
 `;
 
-export const Cap = styled(FontAwesomeIcon)`
+export const Degree = styled.div`
+
+    &::before {
+        content: '▹';
+        color: var(--highlight);
+        position: relative;
+        top: -0.72rem;
+    }
+
     @media (max-width: 480px) {
         display: none;
     }

@@ -12,7 +12,6 @@ export const MainContainer = styled.div`
 
 export const TextBox = styled.div`
     width: 50%;
-    text-align: left;
 
     @media (max-width: 480px) {
         margin-top: -1.75rem;
@@ -34,7 +33,7 @@ export const ToolBox = styled.div`
 `;
 
 export const TextBody = styled.div`
-    margin-top: 2rem;
+    margin-top: var(--page-gap);
     line-height: calc(1.25 * var(--body));
     color: var(--white);
 

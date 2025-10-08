@@ -3,6 +3,7 @@ import { Tooltip, tooltipClasses } from '@mui/material';
 
 export const ProjectBox = styled.div`
     display: flex;
+    gap: calc(4 * var(--page-gap));
     padding: var(--page-gap) 0rem;
     justify-content: space-between;
     align-items: flex-start;
@@ -15,14 +16,10 @@ export const ProjectBox = styled.div`
     }
 `;
 
-export const ProjectName = styled.div`
-    font-size: var(--section);
-    font-weight: 700;
-    margin-bottom: var(--page-gap);
-
-    @media (max-width: 480px) {
-        margin-top: 1rem;
-    }
+export const ProjectContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: calc(2 * var(--page-gap));
 `;
 
 export const ProjectDesc = styled.div`
@@ -42,8 +39,7 @@ export const TechUsed = styled.div`
 `;
 
 export const ProjectInfo = styled.div`
-    width: 50%;
-    text-align: left;
+    width: 100%;
     line-height: calc(var(--body) * 1.25);
 
     @media (max-width: 480px) {
@@ -106,6 +102,12 @@ export const ButtonBox = styled.div`
 
 `;
 
+export const ButtonName = styled.div`
+    font-size: var(--body);
+    display: flex;
+    margin-top: 0.15rem;
+`;
+
 export const Link = styled.a`
     &:link,
     &:visited {
@@ -115,15 +117,14 @@ export const Link = styled.a`
 `;
 
 export const ButtonWrapper = styled.div`
+    display: flex;
+    align-items: center;
     background-color: var(--highlight);
-    line-height: var(--body);
     font-size: var(--body);
     padding: 0.5rem 0.75rem;
     width: fit-content;
-    height: 2.75rem;
     border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
+
     color: var(--blue);
     gap: 0.25rem;
     box-shadow: 0rem 0rem 0.625rem black;
@@ -134,7 +135,7 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-    width: 45%;
+    width: 100%;
     display: flex;
 
     @media (max-width: 480px) {

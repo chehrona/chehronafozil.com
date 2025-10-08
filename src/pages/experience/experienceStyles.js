@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BodyText } from "../commonStyles";
+import { BodyText } from "../../components/commonStyles";
 
 export const ExperienceContainer = styled.div`
     display: flex;
@@ -53,7 +53,6 @@ export const WorkDesc = styled(BodyText)`
     }
 
     @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
-        background-color: red;
         margin: 0rem 1rem 0rem 6rem;
     }
 `;

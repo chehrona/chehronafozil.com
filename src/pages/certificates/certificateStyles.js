@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const MainContainer = styled.div`
     margin-bottom: 10rem;
@@ -12,12 +11,12 @@ export const MainContainer = styled.div`
 export const CertWrapper = styled.div`
     display: flex;
     align-items: center;
+    line-height: calc(1.25 * var(--body));
 
     &::before {
         content: '▹';
         padding-right: 0.5rem;
         color: var(--highlight);
-        
     }
 
     @media (max-width: 480px) {
@@ -41,11 +40,10 @@ export const Link = styled.a`
     }
 `;
 
-export const StyledIcon = styled(FontAwesomeIcon)`
-    color: var(--highlight);
-    margin-left: 0.5rem;
+export const StyledIcon = styled.div`
+    margin:  0rem 0.5rem 0.5rem 0.5rem;
 `;
 
 export const ListContainer = styled.div`
-    padding-top: 2rem;
+    padding-top: var(--page-gap);
 `;

@@ -1,29 +1,27 @@
 import React from "react";
-import { educationList } from "../helper";
+import { educationList } from "../../components/helper";
 
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-
-import { PageTitle } from "../commonStyles";
+import { PageTitle } from "../../components/commonStyles";
 
 import { 
-    EducationContainer,
     Link,
     School,
     EducationBox,
     DegreeWrapper,
     DegreeSubtitle,
-    Cap,
+    Degree,
 } from "./educationStyles";
 import { ButtonWrapper } from "../projects/projectStyles";
+import { PageContainer } from "../landing/pageStyles";
 
 export default function Education() {
     return (
-        <EducationContainer>
+        <PageContainer>
             <PageTitle>Education</PageTitle>
             {educationList.map((entry, i) => {
                 return (
                     <EducationBox key={i + 1}>
-                        <Cap icon={faGraduationCap} />
+                        <Degree />
                         <DegreeWrapper>
                             <div>
                                 {entry?.title}
@@ -43,6 +41,6 @@ export default function Education() {
                     </EducationBox>
                 );
             })}
-        </EducationContainer>
+        </PageContainer>
     )
 }

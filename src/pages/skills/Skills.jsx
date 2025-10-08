@@ -2,11 +2,12 @@ import React from "react";
 
 // Styled components
 import { Circle, LangWrapper, MainContainer, StyledIcon, TextBody, TextBox, ToolBox } from "./skillStyles";
-import { PageTitle } from "../commonStyles";
+import { PageTitle } from "../../components/commonStyles";
 
 // Helper
-import { tech } from "../helper";
-import { PageContainer } from "../../pages/pageStyles";
+import { tech } from "../../components/helper";
+import { PageContainer } from "../landing/pageStyles";
+import CustomIcon from "../../components/customIcon/CustomIcon";
 
 export default function Skills() {
     return (
@@ -23,7 +24,7 @@ export default function Skills() {
                         return (
                             <LangWrapper key={i}>
                                 <Circle>
-                                    <StyledIcon className={entry.icon}></StyledIcon>
+                                    {!entry.icon.startsWith('devicon') ? <CustomIcon icon={entry.icon} color="#fff" /> : <StyledIcon className={entry.icon} />}
                                 </Circle>
                                 <div>{entry.title}</div>
                             </LangWrapper>

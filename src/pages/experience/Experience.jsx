@@ -1,9 +1,9 @@
 import React from "react";
-import { experienceList } from "../helper";
+import { experienceList } from "../../components/helper";
 
 import { useMediaQuery } from "react-responsive";
 
-import { BodyText, PageTitle, SecondaryTitle } from "../commonStyles";
+import { BodyText, PageTitle, SecondaryTitle } from "../../components/commonStyles";
 
 import { 
     WorkBox,
@@ -12,7 +12,7 @@ import {
     DescUnit,
 	ExperienceContainer,
 } from "./experienceStyles";
-import { PageContainer } from "../../pages/pageStyles";
+import { PageContainer } from "../landing/pageStyles";
 
 export default function Experience() {
     const isMobile = useMediaQuery({ query: `(max-width: 1024px)` });

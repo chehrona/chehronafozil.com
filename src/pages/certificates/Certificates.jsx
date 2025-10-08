@@ -1,9 +1,8 @@
 import React from "react";
 
-import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { certificateList } from "../helper";
+import { certificateList } from "../../components/helper";
 
-import { PageTitle } from "../commonStyles";
+import { PageTitle } from "../../components/commonStyles";
 
 import { 
     MainContainer,
@@ -13,9 +12,12 @@ import {
     StyledIcon,
     ListContainer
 } from "./certificateStyles";
+import { PageContainer } from "../landing/pageStyles";
+import CustomIcon from "../../components/customIcon/CustomIcon";
 
 export default function Certificates() {
     return (
+        <PageContainer>
         <MainContainer>
             <PageTitle>Certificates</PageTitle>
             <ListContainer>
@@ -26,7 +28,9 @@ export default function Certificates() {
                                 {entry?.name}
                                 <Company>freeCodeCamp
                                     <Link target={'_blank'} href={entry?.link}>
-                                        <StyledIcon icon={faUpRightFromSquare} />     
+                                        <StyledIcon>
+                                            <CustomIcon icon={'link'} size="1rem" color={'var(--highlight)'} />
+                                        </StyledIcon>     
                                     </Link>
                                 </Company>
                                 
@@ -35,6 +39,6 @@ export default function Certificates() {
                     );
                 })}
             </ListContainer>
-        </MainContainer>
+        </MainContainer></PageContainer>
     )
 }
