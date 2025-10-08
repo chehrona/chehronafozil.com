@@ -1,15 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 
 html {
     padding: 0rem;
+    font-size: 16px;
+}
+
+:root {
+    --blue: #1c252f;
+    --white: #cfcdcd;
+    --highlight: #64ffda;
+
+    --section-gap: 1rem;
+    --page-gap: 1rem;
+
+    --intro: 6rem;
+    --page: 2.75rem;
+    --section: 1.75rem;
+    --body: 1.45rem;
 }
 
 body {
-    background: #212020;
-    font-family: 'Space Mono', monospace;
+    background: var(--blue);
+    font-family: 'NTR', sans-serif;
     color: #fbfbfb;
-    padding: 0rem 4.5rem 0rem 7rem;
-    font-size: 1.125rem;
+    padding: 0rem 7rem;
+    font-size: var(--body);
     margin: 0rem;
 }
 

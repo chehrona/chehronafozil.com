@@ -12,7 +12,7 @@ import { PageContainer } from './pageStyles.js';
 export default function LandingPage() {
     return (
         <div>
-            <PageContainer id="firstPage">
+            <PageContainer id="firstPage" style={{minHeight: '100svh'}}>
                 <Typewriter />
             </PageContainer>
             <Experience />

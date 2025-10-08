@@ -1,14 +1,9 @@
 import styled from 'styled-components';
 import { Tooltip, tooltipClasses } from '@mui/material';
 
-export const ProjectContainer = styled.div`
-    margin: 1rem 0rem 5rem 0rem;
-`;
-
 export const ProjectBox = styled.div`
     display: flex;
-    margin-top: 1.25rem;
-    padding: 2rem 0rem;
+    padding: var(--page-gap) 0rem;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: ${({ right }) => !right && 'row-reverse'};
@@ -21,9 +16,9 @@ export const ProjectBox = styled.div`
 `;
 
 export const ProjectName = styled.div`
-    font-size: 1.5rem;
+    font-size: var(--section);
     font-weight: 700;
-    margin-bottom: 0.625rem;
+    margin-bottom: var(--page-gap);
 
     @media (max-width: 480px) {
         margin-top: 1rem;
@@ -31,14 +26,13 @@ export const ProjectName = styled.div`
 `;
 
 export const ProjectDesc = styled.div`
-    color: #cfcdcd;
-    margin-top: 1rem;
+    color: var(--white);
+    padding-top: var(--page-gap);
 `;
 
 export const TechUsed = styled.div`
-    margin-top: 2rem;
+    padding: var(--page-gap) 0rem;
     display: flex;
-    height: 2rem;
     gap: 0.75rem;
     align-items: center;
 
@@ -50,7 +44,7 @@ export const TechUsed = styled.div`
 export const ProjectInfo = styled.div`
     width: 50%;
     text-align: left;
-    padding: 0rem 2rem;
+    line-height: calc(var(--body) * 1.25);
 
     @media (max-width: 480px) {
         width: 100%;
@@ -64,7 +58,7 @@ export const StyledTooltip = styled(({ className, ...props }) => (
 ))(() => ({
     [`& .${tooltipClasses.tooltip}`]: {
         fontSize: '1rem',
-        color: '#212020',
+        color: 'var(--blue)',
         fontFamily: 'inherit',
         fontWeight: 'normal',
         padding: '0.25rem 0.5rem',
@@ -83,9 +77,9 @@ export const StyledTooltip = styled(({ className, ...props }) => (
 }));
 
 export const StyledIcon = styled.i`
-    font-size: 1.5rem;
-    color: ${({ view }) => (view ? '#212020' : '#cfcdcd')};
+    color: ${({ view }) => (view ? 'var(--blue)' : 'var(--white)')};
     width: 1.5rem;
+    height: 1.5rem;
     cursor: pointer;
 
     @media (max-width: 480px) {
@@ -108,26 +102,29 @@ export const ButtonBox = styled.div`
     display: flex;
     width: 12.5rem;
     margin-top: 1.25rem;
+    gap: var(--page-gap);
+
 `;
 
 export const Link = styled.a`
     &:link,
     &:visited {
-        color: #212020;
+        color: var(--blue);
         text-decoration: none;
     }
 `;
 
 export const ButtonWrapper = styled.div`
-    background-color: white;
-    padding: 0.3125rem;
+    background-color: var(--highlight);
+    line-height: var(--body);
+    font-size: var(--body);
+    padding: 0.5rem 0.75rem;
     width: fit-content;
     height: 2.75rem;
     border-radius: 0.5rem;
     display: flex;
-    color: #212020;
-    margin-right: 1.25rem;
     align-items: center;
+    color: var(--blue);
     gap: 0.25rem;
     box-shadow: 0rem 0rem 0.625rem black;
 

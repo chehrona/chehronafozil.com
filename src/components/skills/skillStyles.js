@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
     display: flex;
-    align-items: flex-start;
-    position: relative;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    gap: 2rem;
 
     @media (max-width: 480px) {
         flex-direction: column;
@@ -13,7 +11,7 @@ export const MainContainer = styled.div`
 `;
 
 export const TextBox = styled.div`
-    width: 45%;
+    width: 50%;
     text-align: left;
 
     @media (max-width: 480px) {
@@ -26,7 +24,7 @@ export const ToolBox = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    justify-content: start;
+    justify-content: flex-end;
 
     @media (max-width: 480px) {
         width: 100%;
@@ -37,7 +35,8 @@ export const ToolBox = styled.div`
 
 export const TextBody = styled.div`
     margin-top: 2rem;
-    color: #cfcdcd;
+    line-height: calc(1.25 * var(--body));
+    color: var(--white);
 
     @media (max-width: 480px) {
         font-size: 1.25rem;
@@ -47,47 +46,29 @@ export const TextBody = styled.div`
 `;
 
 export const LangWrapper = styled.div`
-    width: 7.5rem;
-    height: 8.75rem;
+    width: 7.25rem;
+    height: 7rem;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 1.875rem;
+    align-items: center;
+    font-size: var(--body);
 
     @media (max-width: 480px) {
         font-size: 1.25rem;
     }
 `;
 
-export const CircleWrap = styled.div`
-    display: grid;
-    grid-template-columns: repeat(1, 10rem);
-    grid-gap: 5rem;
-    width: 6.25rem;
-    height: 6.25rem;
-    background: #cfcdcd;
-    border-radius: 50%;
-
-    @media (max-width: 480px) {
-        width: 6rem;
-        height: 6rem;
-    }
-`;
 
 export const Circle = styled.div`
-    width: 5.25rem;
-    height: 5.25rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
-    background: #212020;
-    line-height: 7.5rem;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    position: absolute;
-    z-index: 100;
-    font-weight: 700;
-    font-size: 2em;
+    border: 0.25rem solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 480px) {
         width: 5rem;
@@ -96,11 +77,6 @@ export const Circle = styled.div`
 `;
 
 export const StyledIcon = styled.i`
-    font-size: 3.125rem;
-    position: absolute;
-    color: white;
-    background-color: #212020;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    font-size: var(--section);
+    color: #fff;
 `;

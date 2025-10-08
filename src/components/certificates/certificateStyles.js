@@ -12,7 +12,13 @@ export const MainContainer = styled.div`
 export const CertWrapper = styled.div`
     display: flex;
     align-items: center;
-    margin-top: 0.5rem;
+
+    &::before {
+        content: '▹';
+        padding-right: 0.5rem;
+        color: var(--highlight);
+        
+    }
 
     @media (max-width: 480px) {
         padding: 0rem 0.75rem;
@@ -21,7 +27,7 @@ export const CertWrapper = styled.div`
 `;
 
 export const Company = styled.span`
-    color: #cfcdcd;
+    color: var(--white);
     position: relative;
 `;
 
@@ -30,14 +36,14 @@ export const Link = styled.a`
     bottom: 0rem;
 
     &:link, &:visited {
-        color: #212020;
+        color: var(--blue);
         text-decoration: none;
     }
 `;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
-    color: rgb(255, 40, 66);
-    margin-left: 1rem;
+    color: var(--highlight);
+    margin-left: 0.5rem;
 `;
 
 export const ListContainer = styled.div`

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const IntroTitle = styled.div`
-    font-size: 5.875rem;
+    font-size: var(--intro);
     font-weight: bold;
 
     @media (max-width: 480px) {
@@ -15,10 +15,10 @@ export const IntroTitle = styled.div`
 `;
 
 export const PageTitle = styled.div`
-    font-size: 2.75rem;
+    font-size: var(--page);
+    line-height: var(--page);
+    padding: var(--page-gap) 0rem;
     font-weight: bold;
-    padding-bottom: 1.25rem;
-    text-align: ${({ align }) => align ? align : "left"};
 
     @media (max-width: 480px) {
         font-size: 2rem;
@@ -34,7 +34,8 @@ export const PageTitle = styled.div`
 
 export const SecondaryTitle = styled.div`
     font-weight: 700;
-    font-size: 1.52rem;
+    font-size: var(--section);
+    line-height: var(--section);
 
     @media (max-width: 480px) {
         margin-top: 2rem;
@@ -47,7 +48,7 @@ export const SecondaryTitle = styled.div`
 
 export const BodyText = styled.div`
     font-weight: normal;
-    color: ${({ color }) => color ? "white" : "#cfcdcd"};
+    color: ${({ color }) => color ? color : "var(--white)"};
 
     @media (max-width: 480px) {
         font-size: 1.25rem;

@@ -6,7 +6,9 @@ export const EducationContainer = styled.div`
 `;
 
 export const EducationBox = styled.div`
-    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0rem;
 
     @media (max-width: 480px) {
         padding: 0rem 0.75rem;
@@ -14,25 +16,19 @@ export const EducationBox = styled.div`
 `;
 
 export const DegreeWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: var(--section);
+    line-height: var(--section);
 `;
 
 export const Cap = styled(FontAwesomeIcon)`
-    margin-right: 1rem;
-
     @media (max-width: 480px) {
         display: none;
     }
 `;
 
 export const DegreeSubtitle = styled.div`
-    color: #cfcdcd;
     font-weight: normal;
-    font-size: 1.125rem;
-    margin-left: 2.9rem;
+    font-size: var(--body);
 
     @media (max-width: 480px) {
         margin-left: 0rem;
@@ -41,9 +37,9 @@ export const DegreeSubtitle = styled.div`
 `;
 
 export const School = styled.div`
-    font-size: 1.25rem;
+    font-size: var(--body);
     font-weight: normal;
-    margin-left: 2.9rem;
+    color: var(--white);
 
     @media (max-width: 480px) {
         margin-left: 0rem;
@@ -52,27 +48,7 @@ export const School = styled.div`
 
 export const Link = styled.a`
     &:link, &:visited {
-        color: #212020;
+        color: var(--blue);
         text-decoration: none;
-    }
-`;
-
-export const ButtonWrapper = styled.div`
-    background-color: white;
-    padding: 0.3125rem;
-    width: fit-content;
-    height: 2.75rem;
-    border-radius: 0.5rem;
-    display: flex;
-    color: #212020;
-    margin-left: 2.9rem;
-    margin-top: 0.5rem;
-    align-items: center;
-    box-shadow: 0rem 0rem 0.625rem black;
-
-    @media (max-width: 480px) {
-        margin-left: 0rem;
-        height: 3rem;
-        font-size: 1.25rem;
     }
 `;

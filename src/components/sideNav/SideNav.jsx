@@ -9,10 +9,10 @@ export default function SideNav() {
             <a target="_blank" href="https://github.com/chehrona">
                 <StyledGitHub />
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/chehronai-fozil-a952a7a3/">
+            <a target="_blank" href="https://www.linkedin.com/in/chehrona/">
                 <StyledLinkedIn />
             </a>
-            <a target="_blank" href="mailto:chehronaifozil@gmail.com">
+            <a target="_blank" href="mailto:chehronafozil@gmail.com">
                 <StyledMail />
             </a>
             <SideLine />

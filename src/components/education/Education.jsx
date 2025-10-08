@@ -8,13 +8,13 @@ import { PageTitle } from "../commonStyles";
 import { 
     EducationContainer,
     Link,
-    ButtonWrapper,
     School,
     EducationBox,
     DegreeWrapper,
     DegreeSubtitle,
     Cap,
 } from "./educationStyles";
+import { ButtonWrapper } from "../projects/projectStyles";
 
 export default function Education() {
     return (
@@ -23,25 +23,23 @@ export default function Education() {
             {educationList.map((entry, i) => {
                 return (
                     <EducationBox key={i + 1}>
+                        <Cap icon={faGraduationCap} />
                         <DegreeWrapper>
-                            <Cap icon={faGraduationCap} />
                             <div>
                                 {entry?.title}
                             </div>
-                        </DegreeWrapper>
-                        <DegreeSubtitle>
-                            {entry?.subtitle}
-                        </DegreeSubtitle>
-                        <School>
-                            {entry?.uni}
-                        </School>
-                        {entry?.buttons &&
+                            <DegreeSubtitle>
+                                {entry?.subtitle}
+                            </DegreeSubtitle>
+                            <School>
+                                {entry?.uni}
+                            </School>
+                            {entry?.buttons &&
                                 <Link target="_blank" href={entry?.buttons.link}>
-                                <ButtonWrapper>
-                                    <div>{entry?.buttons.name}</div>
-                                </ButtonWrapper>
-                            </Link>
-                        }
+                                    <ButtonWrapper>{entry?.buttons.name}</ButtonWrapper>
+                                </Link>
+                            }
+                        </DegreeWrapper>
                     </EducationBox>
                 );
             })}

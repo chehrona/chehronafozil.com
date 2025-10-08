@@ -17,7 +17,7 @@ import {
 export default function Certificates() {
     return (
         <MainContainer>
-            <PageTitle align={"right"}>Certificates</PageTitle>
+            <PageTitle>Certificates</PageTitle>
             <ListContainer>
                 {certificateList.map((entry, i) => {
                     return (

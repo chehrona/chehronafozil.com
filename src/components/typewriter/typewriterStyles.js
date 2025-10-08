@@ -6,7 +6,7 @@ export const LineOne = styled(IntroTitle)`
     margin: 0 auto;
     left: 0.35rem;
     position: absolute;
-    max-height: 7.2rem;
+    max-height: 8rem;
     bottom: ${({ bottom }) => bottom && `${bottom}rem`};
 
     @media (max-width: 480px) {
@@ -44,7 +44,7 @@ export const CursorOverlay = styled.div`
     height: 3rem;
     position: absolute;
     bottom: 0rem;
-    background-color: #212020;
+    background-color: var(--blue);
     z-index: 10;
 
     @media (max-width: 480px) {

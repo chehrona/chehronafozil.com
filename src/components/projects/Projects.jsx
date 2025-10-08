@@ -6,7 +6,6 @@ import { projectList } from '../helper';
 import { PageTitle, SecondaryTitle } from '../commonStyles';
 
 import {
-    ProjectContainer,
     ProjectBox,
     ProjectDesc,
     ProjectInfo,
@@ -20,13 +19,14 @@ import {
     StyledImg,
     StyledTooltip,
 } from './projectStyles';
+import { PageContainer } from '../../pages/pageStyles';
 
 export default function Projects() {
     const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
 
     return (
-        <ProjectContainer>
-            <PageTitle align={'right'}>Things I've built</PageTitle>
+        <PageContainer>
+            <PageTitle>Things I've built</PageTitle>
             {projectList.map((entry, i) => {
                 return (
                     <ProjectBox right={entry.image.side}>
@@ -76,9 +76,9 @@ export default function Projects() {
                                                     view={true}
                                                     className={button.icon}
                                                 />
-                                                <div>
+                                                <p>
                                                     {button.name}
-                                                </div>
+                                                </p>
                                             </ButtonWrapper>
                                         </Link>
                                     );
@@ -96,6 +96,6 @@ export default function Projects() {
                     </ProjectBox>
                 );
             })}
-        </ProjectContainer>
+        </PageContainer>
     );
 }

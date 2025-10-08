@@ -30,7 +30,7 @@ export const tech = [
 export const projectList = [
     {
         title: 'thetajikheritage.com',
-        desc: 'A digital corner for all things Tajik, from history to language quirks, and everything in between. I’m a self-confessed history and language nerd, so I built this site to tag along with my Instagram page (with a whopping 1000+ followers!) and give my obsession with Tajik culture a proper home.<br><br>* Hosted on AWS EC2 with Docker.',
+        desc: 'A digital corner for all things Tajik, from history to language quirks, and everything in between. I’m a self-confessed history and language nerd, so I built this site to tag along with my Instagram page (with a whopping 1000+ followers!) and give my obsession with Tajik culture a proper home.<br><br>▹ Hosted on AWS EC2 with Docker.',
         tech: [
             {
                 name: 'Next.js',
@@ -62,7 +62,7 @@ export const projectList = [
     },
     {
         title: 'Farhang Dictionary',
-        desc: 'I came across many Reddit posts from people looking for a good electronic Tajik dictionary, so I jumped on the opportunity to build one. Now it’s a full platform, accessible on the web and through an iOS app, where users can sign in, favorite words, and play language games.<br><br>* The Android app is currently in testing.',
+        desc: 'I came across many Reddit posts from people looking for a good electronic Tajik dictionary, so I jumped on the opportunity to build one. Now it’s a full platform, accessible on the web and through an iOS app, where users can sign in, favorite words, and play vocabulary games.<br><br>▹ The Android app is currently in testing.',
         tech: [
             { name: 'React Native', icon: 'devicon-react-original' },
             { name: 'React Navigation', icon: '/icons/reactnavigation.svg' },
@@ -154,19 +154,19 @@ export const educationList = [
 
 export const certificateList = [
     {
-        name: '• Scientific Computing with Python - ',
+        name: 'Scientific Computing with Python - ',
         link: 'https://www.freecodecamp.org/certification/chehrona/scientific-computing-with-python-v7',
     },
     {
-        name: '• Data Analysis with Python - ',
+        name: 'Data Analysis with Python - ',
         link: 'https://www.freecodecamp.org/certification/chehrona/data-analysis-with-python-v7',
     },
     {
-        name: '• JavaScript Algorithms & Data Structures - ',
+        name: 'JavaScript Algorithms & Data Structures - ',
         link: 'https://www.freecodecamp.org/certification/chehrona/javascript-algorithms-and-data-structures',
     },
     {
-        name: '• Responsive Web Design - ',
+        name: 'Responsive Web Design - ',
         link: 'https://www.freecodecamp.org/certification/chehrona/responsive-web-design',
     },
 ];
@@ -178,22 +178,22 @@ export const experienceList = [
         place: 'gloApp',
         city: 'Toronto, ON',
         desc: [
-            '• Design and implement the mobile app architecture from the ground up using <b>React Native (TypeScript)</b> for frontend and <b>Django with SQL</b> for backend',
-            '• Develop full-stack features based on Figma mockups, ensuring responsiveness and intuitive user experience',
-            '• Build and optimize RESTful APIs to enable secure and efficient communication between the app and backend',
-            '• Lead <b>Agile</b> sprint planning by creating, assigning, and tracking development tasks using <b>Jira</b>',
+            'Design and implement mobile-first architecture using <b>React Native (TypeScript)</b> and <b>Django (Python)</b> for a wellness-related app',
+            'Integrate <b>SQL</b>-based relational databases, secure authentication providers and responsive UI',
+            'Build and optimize RESTful APIs for scalable client-server communication, leveraging <b>Docker</b> containers and CI/CD pipelines for cloud-ready deployments',
+            'Lead Agile sprint planning, creating and tracking development tasks in Jira for a four-person team',
         ],
     },
     {
         dates: '2022 - 2023',
         title: 'Full Stack Developer',
-        place: 'nference',
+        place: 'nference, Inc.',
         city: 'Toronto, ON',
         desc: [
-            '• Built a fea&shyture for on&shyboard&shying tours by in&shyteg&shyrat&shying in&shyte&shyract&shyive ele&shyments and mul&shyti-page ca&shypa&shybi&shyli&shyties by fork&shying the Shepherd.js lib&shyra&shyry',
-            '• Stream&shylined tour crea&shytion/ mo&shydi&shyfi&shyca&shytion with a user-friend&shyly side&shybar, re&shyduc&shying reliance on developers',
-            '• Au&shyto&shymated slide re&shynam&shying for QC by ex&shytract&shying vi&shytal da&shyta, such as case ID, from slide barcodes',
-            '• De&shyve&shyloped scan&shyner hard&shyware error re&shyport&shying for im&shyproved issue track&shying, centralized knowledge base and operator in&shyfor&shyma&shytion shar&shying be&shytween shifts',
+            'Developed and scaled an in-house onboarding framework by extending <b>Shepherd.js</b> with custom interactivity and persistent state across multiple URLs',
+            'Built a no-code CMS for onboarding creation, enabling a team of <b>10+ UI/UX designers</b> to design and launch flows independently, reducing engineering overhead',
+            'Automated data preprocessing for ML pipelines with Python RegEx filters, streamlining QC workflows and pathology slide analysis',
+            'Deployed centralized error reporting and a dynamic troubleshooting guide across <b>10 Mayo Clinic Health Systems scanners</b>, improving visibility and reducing downtime',
         ],
     },
     {
@@ -202,20 +202,9 @@ export const experienceList = [
         place: 'University Health Network',
         city: 'Toronto, ON',
         desc: [
-            '• Established new protocols for gene engineering and flow cytometry',
-            '• Managed the mice facility and systematized DNA screening procedures',
-            '• Co-authored two scientific papers',
+            'Established new protocols for gene engineering and flow cytometry',
+            'Managed the mice facility and systematized DNA screening procedures',
+            'Co-authored two scientific papers',
         ],
-    },
-    {
-        dates: '2018 - 2020',
-        title: 'Graduate Teaching Assistant',
-        place: 'McGill University',
-        city: 'Montréal, QC',
-        desc: [
-            '• Provided review sessions (active learning approach)',
-            '• Led problem solving lectures and monitored student responses (~400 students)',
-            '• Graded exams and discussed marks during viewing sessions',
-        ],
-    },
+    }
 ];

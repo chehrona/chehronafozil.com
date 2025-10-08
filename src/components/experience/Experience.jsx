@@ -10,32 +10,42 @@ import {
     Date,
     WorkWrapper,
     DescUnit,
-    ExperienceContainer
+	ExperienceContainer,
 } from "./experienceStyles";
+import { PageContainer } from "../../pages/pageStyles";
 
 export default function Experience() {
     const isMobile = useMediaQuery({ query: `(max-width: 1024px)` });
 
     return (
-        <ExperienceContainer>
+        <PageContainer>
             <PageTitle>Professional background</PageTitle>
-            {experienceList.map((entry, i) => {
-                return (
-                    <WorkBox key={i + 2}>
-                        <Date>{entry?.dates}</Date>
-                        <WorkWrapper>
-                            <SecondaryTitle>{entry?.title}</SecondaryTitle>
-                            <BodyText color={1}>{isMobile ? entry?.place : `${entry?.place} - ${entry?.city}`}</BodyText>
-                            {isMobile ? <BodyText color={1}>{entry?.city}, {entry?.dates}</BodyText> : null}
-                            <BodyText>
-                                {entry?.desc.map((exp, i) => {
-                                    return <DescUnit key={i + 3} dangerouslySetInnerHTML={{__html: exp}} />
-                                })}
-                            </BodyText>
-                        </WorkWrapper>
-                    </WorkBox>
-                );
-            })}
-        </ExperienceContainer>
+			<ExperienceContainer>
+				{experienceList.map((entry, i) => {
+					return (
+						<WorkBox key={i + 2}>
+							<Date>{entry?.dates}</Date>
+							<WorkWrapper>
+								<SecondaryTitle>{entry?.title}</SecondaryTitle>
+								{isMobile ?(
+									<BodyText color={'var(--highlight)'}>{entry?.place}</BodyText>
+								) : 
+									<BodyText style={{display: 'flex', gap: '0.25rem'}}>
+										<BodyText color={'var(--highlight)'}>{entry?.place}</BodyText>
+										<BodyText>{`- ${entry?.city}`}</BodyText>
+									</BodyText>
+								}
+								{isMobile ? <BodyText color={1}>{entry?.city}, {entry?.dates}</BodyText> : null}
+								<BodyText>
+									{entry?.desc.map((exp, i) => {
+										return <DescUnit key={i + 3} dangerouslySetInnerHTML={{__html: exp}} />
+									})}
+								</BodyText>
+							</WorkWrapper>
+						</WorkBox>
+					);
+				})}
+			</ExperienceContainer>
+        </PageContainer>
     )
 }

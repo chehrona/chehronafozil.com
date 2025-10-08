@@ -32,7 +32,7 @@ export const SideLine = styled.div`
 
 export const StyledMail = styled(MailOutline)`
     margin-bottom: 0.5rem;
-    color: #cfcdcd;
+    color: var(--white);
     filter: brightness(60%);
 
     &.MuiSvgIcon-root {
@@ -50,7 +50,7 @@ export const StyledMail = styled(MailOutline)`
 
 export const StyledGitHub = styled(GitHub)`
     margin-bottom: 0.5rem;
-    color: #cfcdcd;
+    color: var(--white);
     filter: brightness(60%);
 
     &.MuiSvgIcon-root {
@@ -64,7 +64,7 @@ export const StyledGitHub = styled(GitHub)`
 
 export const StyledLinkedIn = styled(LinkedIn)`
     margin-bottom: 0.5rem;
-    color: #cfcdcd;
+    color: var(--white);
     filter: brightness(60%);
 
     &.MuiSvgIcon-root {

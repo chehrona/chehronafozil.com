@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <StyledFooter>
             {isMobile ? <SideNav /> : null}
-            <div>Designed & Built by Chehronai Fozil</div>
+            <div>Designed & Built by Chehrona Fozil</div>
         </StyledFooter>
     )
 }

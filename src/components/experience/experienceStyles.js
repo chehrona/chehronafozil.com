@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { BodyText } from "../commonStyles";
 
 export const ExperienceContainer = styled.div`
-    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: calc(2 * var(--page-gap));
+    padding-top: var(--page-gap);
 
     @media (max-width: 480px) {
         margin-bottom: 3rem;
@@ -10,7 +13,6 @@ export const ExperienceContainer = styled.div`
 `;
 
 export const WorkBox = styled.div`
-    margin-top: 2rem;
     display: flex;
 
     @media (max-width: 480px) {
@@ -25,8 +27,8 @@ export const WorkBox = styled.div`
 `;
 
 export const Date = styled.div`
-    font-size: 1.5rem;
-    margin-right: 2.9rem;
+    font-size: var(--section);
+    line-height: var(--section);
     width: 15%;
 
     @media (max-width: 1024px) {
@@ -35,8 +37,10 @@ export const Date = styled.div`
 `;
 
 export const WorkWrapper = styled.div`
-    align-items: center;
     width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
     @media (max-width: 1024px) {
         width: 100%;
@@ -44,8 +48,6 @@ export const WorkWrapper = styled.div`
 `;
 
 export const WorkDesc = styled(BodyText)`
-    margin-top: 1rem;
-
     @media (max-width: 480px) {
         margin: 2rem 0rem 1rem 0rem;
     }
@@ -57,6 +59,13 @@ export const WorkDesc = styled(BodyText)`
 `;
 
 export const DescUnit = styled.div`
+    line-height: calc(var(--body) * 1.25);
+
+    &::before {
+        content: '▹ ';
+        color: var(--highlight);
+    }
+
     @media (max-width: 480px) {
         margin-top: 1rem;
         line-height: 1.75rem;
