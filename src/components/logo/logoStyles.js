@@ -17,17 +17,7 @@ export const MainContainer = styled.div`
     }
 `;
 
-export const Letter = styled.img`
-    position: absolute;
-    width: 1.25rem;
-    height: 2.3125rem;
-    top: ${({ top }) => top && top};
-    left: ${({ left }) => left && left};
-`;
-
-export const Dot = styled.img`
-    width: 0.3125rem;
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5625rem;
+export const Img = styled.img`
+    width: 2.5rem;
+    height: 2.5rem;
 `;
