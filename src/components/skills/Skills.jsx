@@ -1,7 +1,7 @@
 import React from "react";
 
 // Styled components
-import { Circle, CircleWrap, LangWrapper, MainContainer, StyledIcon, TextBody, TextBox, ToolBox } from "./skillStyles";
+import { Circle, LangWrapper, MainContainer, StyledIcon, TextBody, TextBox, ToolBox } from "./skillStyles";
 import { PageTitle } from "../commonStyles";
 
 // Helper
