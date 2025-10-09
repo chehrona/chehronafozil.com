@@ -3,11 +3,7 @@ import styled from "styled-components";
 export const EducationBox = styled.div`
     display: flex;
     gap: 0.5rem;
-    padding: 1rem 0rem;
-
-    @media (max-width: 480px) {
-        padding: 0rem 0.75rem;
-    }
+    padding: var(--page-gap) 0rem;
 `;
 
 export const DegreeWrapper = styled.div`
@@ -23,30 +19,17 @@ export const Degree = styled.div`
         position: relative;
         top: -0.72rem;
     }
-
-    @media (max-width: 480px) {
-        display: none;
-    }
 `;
 
 export const DegreeSubtitle = styled.div`
     font-weight: normal;
     font-size: var(--body);
-
-    @media (max-width: 480px) {
-        margin-left: 0rem;
-        font-size: 1.2rem;
-    }
 `;
 
 export const School = styled.div`
     font-size: var(--body);
     font-weight: normal;
     color: var(--white);
-
-    @media (max-width: 480px) {
-        margin-left: 0rem;
-    }
 `;
 
 export const Link = styled.a`

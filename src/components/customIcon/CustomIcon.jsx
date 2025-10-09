@@ -7,12 +7,13 @@ import { ReactComponent as CV } from './icons/cv.svg';
 import { ReactComponent as Web } from './icons/web.svg';
 import { ReactComponent as IOS } from './icons/ios.svg';
 import { ReactComponent as Link } from './icons/link.svg';
-import { ReactComponent as Degree } from './icons/degree.svg';
 
 import { ReactComponent as Api } from './icons/api.svg';
 import { ReactComponent as Aws } from './icons/aws.svg';
+import { ReactComponent as Styled } from './icons/styled.svg';
 import { ReactComponent as Meili } from './icons/meili.svg';
-import { ReactComponent as Caddy } from './icons/caddy.svg';
+import Caddy from './icons/caddy.png';
+import CaddyWhite from './icons/caddy_white.png';
 
 const CustomIcon = ({ icon, size = '1.5rem', color = 'var(--white)' }) => {
     switch (icon) {
@@ -31,19 +32,21 @@ const CustomIcon = ({ icon, size = '1.5rem', color = 'var(--white)' }) => {
             return <IOS fill={color} height={size} width={size} />
         case "link": 
             return <Link fill={color} height={size} width={size} />
-        case "degree": 
-            return <Degree fill={color} height={size} width={size} />
 
         case "api": 
             return <Api fill={color} height={size} width={size} />
         case "aws": 
             return <Aws fill={color} height={size} width={size} />
+        case "styled": 
+            return <Styled fill={color} height={size} width={size} />
         case "meili": 
             return <Meili fill={color} height={size} width={size} />
         case "caddy": 
-            return <Caddy fill={color} height={size} width={size} />
-
-
+            return <img src={Caddy} alt="Caddy" style={{height: size, width: size}} />;
+        case "caddy_white": 
+            return <img src={CaddyWhite} alt="Caddy" style={{height: size, width: size}} />;
+        default:
+            return null;
     }
 }
 

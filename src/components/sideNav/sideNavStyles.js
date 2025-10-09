@@ -10,11 +10,14 @@ export const MainContainer = styled.div`
     @media (max-width: 480px) {
         position: relative;
         display: flex;
-        justify-content: center;
-        gap: 1rem;
-        width: 100%;
         left: 0rem;
-        padding: 0rem 0.75rem 0.5rem 0rem;
+        bottom: 0rem;
+        text-align: unset;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        gap: var(--page-gap);
+        padding: var(--page-gap) 0rem;
     }
 `;
 
@@ -37,9 +40,5 @@ export const Link = styled.a`
 
     &:hover {
         filter: brightness(100%);  
-    }
-
-    @media (max-width: 480px) {
-        margin-left: 1rem;;
     }
 `;

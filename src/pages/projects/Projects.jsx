@@ -32,7 +32,7 @@ export default function Projects() {
             <ProjectContainer>
                 {projectList.map((entry, i) => {
                     return (
-                        <ProjectBox right={entry.image.side}>
+                        <ProjectBox right={entry.image.side} key={`project_${i}`}>
                             <ProjectInfo key={i}>
                                 {!isMobile ? (
                                     <SecondaryTitle>{entry.title}</SecondaryTitle>

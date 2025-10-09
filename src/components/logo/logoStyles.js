@@ -7,17 +7,18 @@ export const MainContainer = styled.div`
     cursor: pointer;
 
     @media (max-width: 480px) {
-        top: 0.65rem;
-        left: 0.65rem;
+        top: 0rem;
+        left: 0rem;
         position: relative;
-    }
-
-    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
-        
     }
 `;
 
 export const Img = styled.img`
     width: 2.5rem;
     height: 2.5rem;
+
+    @media (max-width: 480px) {
+        width: 3rem;
+        height: 3rem;
+    }
 `;

@@ -10,8 +10,9 @@ export const ProjectBox = styled.div`
     flex-direction: ${({ right }) => !right && 'row-reverse'};
 
     @media (max-width: 480px) {
+        gap: 0rem;
         margin: 0rem;
-        padding: 0rem 0.75rem 2rem 0.75rem;
+        padding: 0rem;
         flex-direction: column-reverse;
     }
 `;
@@ -30,11 +31,12 @@ export const ProjectDesc = styled.div`
 export const TechUsed = styled.div`
     padding: var(--page-gap) 0rem;
     display: flex;
-    gap: 0.75rem;
+    gap: var(--page-gap);
     align-items: center;
 
     @media (max-width: 480px) {
-        margin-top: 2rem;
+        width: 100%;
+        flex-wrap: wrap;
     }
 `;
 
@@ -44,8 +46,7 @@ export const ProjectInfo = styled.div`
 
     @media (max-width: 480px) {
         width: 100%;
-        margin-top: 1rem;
-        font-size: 1.25rem;
+        margin-top: var(--page-gap);
     }
 `;
 
@@ -77,10 +78,6 @@ export const StyledIcon = styled.i`
     width: 1.5rem;
     height: 1.5rem;
     cursor: pointer;
-
-    @media (max-width: 480px) {
-        font-size: 2rem;
-    }
 `;
 
 export const StyledImg = styled.img`
@@ -88,16 +85,12 @@ export const StyledImg = styled.img`
     width: 1.5rem;
     max-width: 1.5rem;
     cursor: pointer;
-
-    @media (max-width: 480px) {
-        height: 1.8rem;
-    }
 `;
 
 export const ButtonBox = styled.div`
     display: flex;
     width: 12.5rem;
-    margin-top: 1.25rem;
+    margin-top: var(--page-gap);
     gap: var(--page-gap);
 
 `;
@@ -121,17 +114,13 @@ export const ButtonWrapper = styled.div`
     align-items: center;
     background-color: var(--highlight);
     font-size: var(--body);
-    padding: 0.5rem 0.75rem;
+    padding: 0.53rem var(--page-gap) 0.47rem var(--page-gap);
     width: fit-content;
     border-radius: 0.5rem;
-
     color: var(--blue);
-    gap: 0.25rem;
+    gap: 0.55rem;
     box-shadow: 0rem 0rem 0.625rem black;
 
-    @media (max-width: 480px) {
-        height: 3rem;
-    }
 `;
 
 export const ImageWrapper = styled.div`
@@ -149,6 +138,6 @@ export const ProjectImage = styled.img`
     width: 100%;
 
     @media (max-width: 480px) {
-        margin-top: 1.25rem;
+        margin-top: var(--page-gap);
     }
 `;

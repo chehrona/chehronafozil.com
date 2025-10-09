@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { BodyText } from "../../components/commonStyles";
 
 export const ExperienceContainer = styled.div`
     display: flex;
@@ -8,17 +7,13 @@ export const ExperienceContainer = styled.div`
     padding-top: var(--page-gap);
 
     @media (max-width: 480px) {
-        margin-bottom: 3rem;
+        gap: var(--page-gap);
+        padding-top: 0rem;
     }
 `;
 
 export const WorkBox = styled.div`
     display: flex;
-
-    @media (max-width: 480px) {
-        margin: 0rem;
-        padding: 0rem 0.75rem;
-    }
 
     @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
         margin: 0rem;
@@ -47,16 +42,6 @@ export const WorkWrapper = styled.div`
     }
 `;
 
-export const WorkDesc = styled(BodyText)`
-    @media (max-width: 480px) {
-        margin: 2rem 0rem 1rem 0rem;
-    }
-
-    @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
-        margin: 0rem 1rem 0rem 6rem;
-    }
-`;
-
 export const DescUnit = styled.div`
     line-height: calc(var(--body) * 1.25);
 
@@ -66,7 +51,6 @@ export const DescUnit = styled.div`
     }
 
     @media (max-width: 480px) {
-        margin-top: 1rem;
-        line-height: 1.75rem;
+        margin-top: 0.5rem;
     }
 `;

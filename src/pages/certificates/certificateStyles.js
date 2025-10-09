@@ -11,17 +11,14 @@ export const MainContainer = styled.div`
 export const CertWrapper = styled.div`
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     line-height: calc(1.25 * var(--body));
 
     &::before {
         content: '▹';
-        padding-right: 0.5rem;
         color: var(--highlight);
-    }
-
-    @media (max-width: 480px) {
-        padding: 0rem 0.75rem;
-        font-size: 1.25rem;
+        position: relative;
+        top: -0.75rem;
     }
 `;
 

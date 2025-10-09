@@ -17,7 +17,7 @@ import CustomIcon from "../../components/customIcon/CustomIcon";
 
 export default function Certificates() {
     return (
-        <PageContainer>
+        <PageContainer style={{ paddingTop: '0rem'}}>
         <MainContainer>
             <PageTitle>Certificates</PageTitle>
             <ListContainer>

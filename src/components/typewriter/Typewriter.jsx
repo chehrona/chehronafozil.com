@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactTyped from "react-typed";
 import { useMediaQuery } from "react-responsive";
 
-import { CursorOverlay, DescLine, LineOne } from "./typewriterStyles";
+import { CursorOverlay, DescLine, LineOne, TypewriterContainer } from "./typewriterStyles";
 
 export default function Typewriter() {
     const [showOverlay, setShowOverlay] = useState(true);
@@ -10,8 +10,8 @@ export default function Typewriter() {
     const isMobile = useMediaQuery({ query: `(max-width: 480px)` });
 
     return (
-        <div>
-            <LineOne bottom={isMobile ? 15 : 21}>
+        <TypewriterContainer>
+            <LineOne bottom={20}>
                 <ReactTyped
                     strings={["Hi!"]}
                     typeSpeed={70}
@@ -22,7 +22,7 @@ export default function Typewriter() {
                     }}
                 />
             </LineOne>
-            <LineOne bottom={isMobile ? 12 : 15}>
+            <LineOne bottom={isMobile ? 17 : 15}>
                 <ReactTyped
                     strings={["I am Chehrona"]}
                     typeSpeed={60}
@@ -35,10 +35,10 @@ export default function Typewriter() {
                     }}
                 />
             </LineOne>
-            <DescLine bottom={6}>
+            <DescLine bottom={isMobile ? 12 : 3.5}>
                 {showOverlay && <CursorOverlay />}
                 <ReactTyped
-                    strings={[isMobile ? "A molecular biologist" : "full-stack developer by title, problem-solver by nature"]}
+                    strings={[isMobile ? "full-stack developer by title," : "full-stack developer by title, problem-solver by nature"]}
                     typeSpeed={25}
                     startDelay={1800}
                     cursorChar="|"
@@ -49,13 +49,12 @@ export default function Typewriter() {
                     }}
                 />
             </DescLine>
-            {isMobile && (
-                <DescLine bottom={4}>
+            {isMobile && !mobileOverlay && (
+                <DescLine bottom={isMobile ? 10 : 4}>
                     {mobileOverlay && <CursorOverlay />}
                     <ReactTyped
-                        strings={["turned software engineer"]}
+                        strings={["problem-solver by nature"]}
                         typeSpeed={25}
-                        startDelay={2550}
                         cursorChar="|"
                         showCursor={true}
                         onComplete={(instance) => {
@@ -64,6 +63,6 @@ export default function Typewriter() {
                     />
                 </DescLine>
             )}
-        </div>
+        </TypewriterContainer>
     )
 }

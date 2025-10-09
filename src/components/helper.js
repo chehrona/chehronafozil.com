@@ -5,6 +5,7 @@ export const tech = [
     { icon: 'devicon-javascript-plain', title: 'JavaScript' },
     { icon: 'devicon-html5-plain', title: 'HTML5' },
     { icon: 'devicon-css3-plain', title: 'CSS3' },
+    { icon: 'styled', title: 'styled' },
     { icon: 'devicon-jquery-plain', title: 'jQuery' },
 
     // Backend
@@ -19,10 +20,12 @@ export const tech = [
     { icon: 'devicon-mongodb-plain', title: 'MongoDB' },
     { icon: 'devicon-mysql-plain', title: 'MySQL' },
     { icon: 'devicon-firebase-plain', title: 'Firebase' },
+    { icon: 'aws', title: 'AWS' },
 
     // Extra
     { icon: 'devicon-git-plain', title: 'Git' },
     { icon: 'devicon-github-plain', title: 'GitHub' },
+    { icon: 'caddy_white', title: 'Caddy' },
     { icon: 'devicon-jira-plain', title: 'Jira' },
     { icon: 'devicon-figma-plain', title: 'Figma' },
 ];

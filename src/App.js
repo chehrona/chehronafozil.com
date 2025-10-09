@@ -12,7 +12,6 @@ import Certificates from './pages/certificates/Certificates';
 // Components
 import Footer from './components/footer/Footer';
 import SideNav from './components/sideNav/SideNav';
-import Logo from './components/logo/Logo';
 
 
 function App() {
@@ -21,9 +20,6 @@ function App() {
     return (
         <>
             {!isMobile ? <SideNav /> : null}
-            <a href={'#firstPage'}>
-                <Logo />
-            </a>
             <LandingPage />
             <Experience />
             <Projects />
