@@ -6,6 +6,7 @@ import { ReactComponent as CV } from './icons/cv.svg';
 
 import { ReactComponent as Web } from './icons/web.svg';
 import { ReactComponent as IOS } from './icons/ios.svg';
+import { ReactComponent as Android } from './icons/android.svg';
 import { ReactComponent as Link } from './icons/link.svg';
 
 import { ReactComponent as Api } from './icons/api.svg';
@@ -28,8 +29,10 @@ const CustomIcon = ({ icon, size = '1.5rem', color = 'var(--white)' }) => {
         
         case "web": 
             return <Web fill={color} height={size} width={size} />
-         case "ios": 
+        case "ios": 
             return <IOS fill={color} height={size} width={size} />
+        case "android": 
+            return <Android fill={color} height={size} width={size} />
         case "link": 
             return <Link fill={color} height={size} width={size} />
 

@@ -5,7 +5,7 @@ export const tech = [
     { icon: 'devicon-javascript-plain', title: 'JavaScript' },
     { icon: 'devicon-html5-plain', title: 'HTML5' },
     { icon: 'devicon-css3-plain', title: 'CSS3' },
-    { icon: 'styled', title: 'styled' },
+    { icon: 'styled', title: 'styled-components' },
     { icon: 'devicon-jquery-plain', title: 'jQuery' },
 
     // Backend
@@ -84,23 +84,18 @@ export const projectList = [
             {
                 link: 'https://apps.apple.com/us/app/farhang/id6747536754',
                 icon: 'ios',
-                name: 'iOS',
+                name: 'Apple',
             },
-            // {
-            //     link: 'https://apps.apple.com/us/app/farhang/id6747536754',
-            //     icon: 'devicon-android-plain',
-            //     name: 'Android',
-            // },
+            {
+                link: 'https://apps.apple.com/us/app/farhang/id6747536754',
+                icon: 'android',
+                name: 'Google',
+            },
             {
                 link: 'https://farhang.thetajikheritage.com/en',
                 icon: 'web',
                 name: 'Visit',
             },
-            // {
-            //     link: 'https://github.com/chehrona/RecipeManager-backend',
-            //     icon: 'fa-brands fa-github',
-            //     name: 'Backend',
-            // },
         ],
         image: {
             side: false,
@@ -114,9 +109,6 @@ export const projectList = [
             { name: 'HTML', icon: 'devicon-html5-plain' },
             { name: 'CSS', icon: 'devicon-css3-plain' },
             { name: 'JavaScript', icon: 'devicon-javascript-plain' },
-            // { name: 'Sass', icon: 'devicon-sass-original' },
-            // { name: 'React', icon: 'devicon-react-plain' },
-            // { name: 'TypeScript', icon: 'devicon-typescript-plain' },
             { name: 'Firebase', icon: 'devicon-firebase-plain' },
         ],
         buttons: [

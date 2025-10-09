@@ -18,8 +18,13 @@ export const CertWrapper = styled.div`
         content: '▹';
         color: var(--highlight);
         position: relative;
-        top: -0.75rem;
     }
+
+    @media (max-width: 480px) {
+        &::before {
+            top: -0.75rem;
+        }
+    }    
 `;
 
 export const Company = styled.span`

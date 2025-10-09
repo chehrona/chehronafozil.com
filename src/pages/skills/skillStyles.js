@@ -44,14 +44,13 @@ export const LangWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: var(--body);
+    gap: 0.75rem;
 
     @media (max-width: 480px) {
         width: 30%;
         height: auto;
     }
 `;
-
 
 export const Circle = styled.div`
     width: 4rem;
@@ -66,4 +65,12 @@ export const Circle = styled.div`
 export const StyledIcon = styled.i`
     font-size: var(--section);
     color: #fff;
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+    }
 `;
+
+export const Text = styled.div`
+    line-height: var(--body);
+`

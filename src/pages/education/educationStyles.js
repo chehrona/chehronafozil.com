@@ -33,6 +33,7 @@ export const School = styled.div`
 `;
 
 export const Link = styled.a`
+
     &:link, &:visited {
         color: var(--blue);
         text-decoration: none;

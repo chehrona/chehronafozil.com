@@ -66,11 +66,6 @@ export const StyledTooltip = styled(({ className, ...props }) => (
     [`& .${tooltipClasses.arrow}`]: {
         color: 'white',
     },
-    '@media (max-width: 1024px)': {
-        [`& .${tooltipClasses.tooltip}`]: {
-            display: 'none',
-        },
-    },
 }));
 
 export const StyledIcon = styled.i`
@@ -120,6 +115,10 @@ export const ButtonWrapper = styled.div`
     color: var(--blue);
     gap: 0.55rem;
     box-shadow: 0rem 0rem 0.625rem black;
+
+    @media (max-width: 480px) {
+        padding: 0.53rem 0.5rem 0.47rem 0.5rem;
+    }
 
 `;
 
