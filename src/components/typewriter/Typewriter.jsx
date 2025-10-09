@@ -39,7 +39,7 @@ export default function Typewriter() {
                 {showOverlay && <CursorOverlay />}
                 <ReactTyped
                     strings={[isMobile ? "full-stack developer by title," : "full-stack developer by title, problem-solver by nature"]}
-                    typeSpeed={25}
+                    typeSpeed={20}
                     startDelay={1800}
                     cursorChar="|"
                     showCursor={true}
@@ -54,7 +54,7 @@ export default function Typewriter() {
                     {mobileOverlay && <CursorOverlay />}
                     <ReactTyped
                         strings={["problem-solver by nature"]}
-                        typeSpeed={25}
+                        typeSpeed={20}
                         cursorChar="|"
                         showCursor={true}
                         onComplete={(instance) => {

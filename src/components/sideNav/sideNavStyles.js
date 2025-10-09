@@ -6,6 +6,7 @@ export const MainContainer = styled.div`
     bottom: 0rem;
     width: 2.5rem;
     text-align: center;
+    z-index: 1000;
 
     @media (max-width: 480px) {
         position: relative;
