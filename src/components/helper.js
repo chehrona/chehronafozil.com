@@ -56,7 +56,7 @@ export const projectList = [
                 link: 'https://www.thetajikheritage.com/',
                 icon: 'web',
                 name: 'Visit',
-            }
+            },
         ],
         image: {
             side: true,
@@ -86,11 +86,11 @@ export const projectList = [
                 icon: 'ios',
                 name: 'Apple',
             },
-            {
-                link: 'https://apps.apple.com/us/app/farhang/id6747536754',
-                icon: 'android',
-                name: 'Google',
-            },
+            // {
+            //     link: 'https://apps.apple.com/us/app/farhang/id6747536754',
+            //     icon: 'android',
+            //     name: 'Google',
+            // },
             {
                 link: 'https://farhang.thetajikheritage.com/en',
                 icon: 'web',
@@ -168,25 +168,35 @@ export const certificateList = [
 
 export const experienceList = [
     {
-        dates: '2024 - Pres.',
+        dates: '2025 - Pres.',
         title: 'Software Engineer',
-        place: 'gloApp',
+        place: 'North Power Industries',
         city: 'Toronto, ON',
         desc: [
-            'Design and implement mobile-first architecture using <b>React Native (TypeScript)</b> and <b>Django (Python)</b> for a wellness-related app',
-            'Integrate <b>SQL</b>-based relational databases, secure authentication providers and responsive UI',
-            'Build and optimize RESTful APIs for scalable client-server communication, leveraging <b>Docker</b> containers and CI/CD pipelines for cloud-ready deployments',
-            'Lead Agile sprint planning, creating and tracking development tasks in Jira for a four-person team',
+            'Building an auto-parts e-commerce platform enabling search, advanced filtering, and side-by-side comparison of <b>3,500+ products</b>',
+            'Developing a custom CMS for product management, consolidating data from multiple platforms into a single unified database',
+            'Integrating Fishbowl Inventory Management to synchronize stock levels and ensure accurate, real-time inventory across multiple warehouses and countries',
         ],
     },
     {
-        dates: '2022 - 2023',
+        dates: '2024 - 2025',
+        title: 'Software Engineer',
+        place: 'gloApp (early startup)',
+        city: 'Toronto, ON',
+        desc: [
+            'Designed and implemented mobile-first architecture using React Native (TypeScript) and Django (Python) for a wellness-related app',
+            'Integrated SQL-based relational databases, secure authentication providers and responsive UI',
+            'Built and optimized RESTful APIs for scalable client-server communication, leveraging Docker containers and CI/CD pipelines for cloud-ready deployments',
+        ],
+    },
+    {
+        dates: '2022 - 2024',
         title: 'Full Stack Developer',
         place: 'nference, Inc.',
         city: 'Toronto, ON',
         desc: [
-            'Developed and scaled an in-house onboarding framework by extending <b>Shepherd.js</b> with custom interactivity and persistent state across multiple URLs',
-            'Built a no-code CMS for onboarding creation, enabling a team of <b>10+ UI/UX designers</b> to design and launch flows independently, reducing engineering overhead',
+            'Developed and scaled an in-house onboarding framework by extending Shepherd.js with custom interactivity and persistent state across multiple URLs',
+            'Built a no-code CMS for onboarding creation, enabling a team of 10+ UI/UX designers to design and launch flows independently, reducing engineering overhead',
             'Automated data preprocessing for ML pipelines with Python RegEx filters, streamlining QC workflows and pathology slide analysis',
             'Deployed centralized error reporting and a dynamic troubleshooting guide across <b>10 Mayo Clinic Health Systems scanners</b>, improving visibility and reducing downtime',
         ],
@@ -197,9 +207,9 @@ export const experienceList = [
         place: 'University Health Network',
         city: 'Toronto, ON',
         desc: [
-            'Established new protocols for gene engineering and flow cytometry',
-            'Managed the mice facility and systematized DNA screening procedures',
-            'Co-authored two scientific papers',
+            'Developed and implemented CRISPR-Cas9 gene engineering workflows, integrating flow cytometry for single-cell isolation',
+            'Maintained and managed the mouse facility, successfully reviving two mouse strains and standardizing screening protocols that supported a peer-reviewed <a target="_blank" href="https://academic.oup.com/nar/article/51/9/4341/7079642?login=false">publication</a>',
+            'Coordinated laboratory inventory, reagent ordering, and cell line tracking to support ongoing research',
         ],
-    }
+    },
 ];
