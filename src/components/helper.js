@@ -33,7 +33,7 @@ export const tech = [
 export const projectList = [
     {
         title: 'thetajikheritage.com',
-        desc: 'A digital corner for all things Tajik, from history to language quirks, and everything in between. I’m a self-confessed history and language nerd, so I built this site to tag along with my Instagram page (with a whopping 1000+ followers!) and give my obsession with Tajik culture a proper home.<br><br>▹ Hosted on AWS EC2 with Docker.',
+        desc: 'A digital corner for all things Tajik, from history to language quirks, and everything in between. I’m a self-confessed history and language nerd, so I built this site to tag along with my Instagram page (with a whopping 1200+ followers!) and give my obsession with Tajik culture a proper home.<br><br>▹ Hosted on AWS EC2 with Docker.',
         tech: [
             {
                 name: 'Next.js',
@@ -141,8 +141,8 @@ export const educationList = [
         },
     },
     {
-        title: 'Bachelor of Science, Biochemistry',
-        subtitle: 'Minor: Computer Science',
+        title: 'Bachelor of Arts, Biochemistry',
+        subtitle: 'Minor: Business',
         uni: 'Maryville College',
     },
 ];
@@ -174,7 +174,7 @@ export const experienceList = [
         city: 'Toronto, ON',
         desc: [
             'Building an auto-parts e-commerce platform enabling search, advanced filtering, and side-by-side comparison of <b>3,500+ products</b>',
-            'Developing a custom CMS for product management, consolidating data from multiple platforms into a single unified database',
+            'Developing an in-house CMS and inventory management system to replace ShowMeTheParts as the cataloging service, consolidating product data from multiple platforms into a unified database and eliminating <b>$18K/year in fees</b>',
             'Integrating Fishbowl Inventory Management to synchronize stock levels and ensure accurate, real-time inventory across multiple warehouses and countries',
         ],
     },
@@ -187,6 +187,7 @@ export const experienceList = [
             'Designed and implemented mobile-first architecture using React Native (TypeScript) and Django (Python) for a wellness-related app',
             'Integrated SQL-based relational databases, secure authentication providers and responsive UI',
             'Built and optimized RESTful APIs for scalable client-server communication, leveraging Docker containers and CI/CD pipelines for cloud-ready deployments',
+            'Launched the app in Regina, Saskatchewan, onboarding <b>20+ freelance beauticians</b>; however, could not find product-market fit and a sustainable monetization model',
         ],
     },
     {
